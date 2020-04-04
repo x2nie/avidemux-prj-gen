@@ -14,13 +14,15 @@ META = [] # array of dict per segment
 
 
 def read_film():
-    # with open('project.xml') as f:
-    #     tree = etree.parse(f)
-    # root = etree.Element("TimeLine")
-    # with open('project6.xml') as f:
-    with open('intro.xml') as f:
-        s = f.read()    
-        return etree.XML(s)
+    if FILM_PRJ.endswith('.wfp'):
+        from zipfile import ZipFile
+        with ZipFile(FILM_PRJ) as myzip:
+            with myzip.open('WSVEFolder/Project/project.xml') as myfile:
+                s = myfile.read()
+    else:
+        with open('intro.xml') as f:
+            s = f.read()    
+    return etree.XML(s)
     
 root = read_film()    
 
