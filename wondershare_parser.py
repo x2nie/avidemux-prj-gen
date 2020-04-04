@@ -20,7 +20,7 @@ def read_film():
     # with open('project6.xml') as f:
     with open('intro.xml') as f:
         s = f.read()    
-        root = etree.XML(s)
+        return etree.XML(s)
     
 root = read_film()    
 
