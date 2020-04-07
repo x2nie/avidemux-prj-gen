@@ -1,0 +1,2408 @@
+*************************
+  Avidemux v2.7.5
+*************************
+ http://www.avidemux.org
+ Code      : Mean, JSC, Grant Pedersen,eumagga0x2a
+ GFX       : Nestor Di, nestordi@augcyl.org
+ Design    : Jakub Misak
+ FreeBSD   : Anish Mistry, amistry@am-productions.biz
+ Audio     : Mihail Zenkov
+ Mac OS X  : Kuisathaverat, Harry van der Wolf
+ Win32     : Grant Pedersen
+
+Build Target: Microsoft Windows (x86-64)
+User Interface: Qt (5.12.0)
+Operating System: Microsoft Windows (6.2.9200; 64-bit)
+Time: Tue Apr  7 10:29:01 2020
+
+0: D:\Program Files\Avidemux 2.7 VC++ 64bits\avidemux.exe
+
+Initialising prefs
+[preferences::load] 03:29:01-482 Loading prefs from C:\Users\citra\AppData\Roaming\avidemux\config3
+[preferences::load] 03:29:01-482 Preferences found and loaded
+[CpuCaps] Checking CPU capabilities
+		MMX detected
+		MMXEXT detected
+		SSE detected
+		SSE2 detected
+		SSE3 detected
+		SSSE3 detected
+[CpuCaps::init] 03:29:01-482 [CpuCaps] End of CPU capabilities check (cpuCaps: 0x000001e6, cpuMask: 0xffffffff)
+[CpuCaps::setMask] 03:29:01-482 [CpuCaps] Setting mask to 0x7fffffff
+Initializing WinSock
+WinSock ok
+[UI_Init] 03:29:01-484 Starting Qt5 GUI...
+[loadTranslator] 03:29:01-493 Using system language
+[loadTranslator] 03:29:01-493 Initializing language en_ID
+[loadTranslator] 03:29:01-493 Translation folder is <D:\Program Files\Avidemux 2.7 VC++ 64bits\qt5\i18n\>
+[loadTranslation] 03:29:01-493 [Locale] Loading language file D:\Program Files\Avidemux 2.7 VC++ 64bits\qt5\i18n\qtbase_en_ID [loadTranslation] 03:29:01-493 FAILED
+[loadTranslation] 03:29:01-493 [Locale] Loading language file D:\Program Files\Avidemux 2.7 VC++ 64bits\qt5\i18n\avidemux_en_ID [loadTranslation] 03:29:01-494 succeeded
+[loadTranslator] 03:29:01-494 Updating translations...
+[loadTranslator] 03:29:01-494 [Locale] Test: &Edit -> &Edit
+
+Initializing Dithering tables
+[COREUI] Compiled with 01.00.00
+[COREUI] Linked with   01.00.00
+[CoreUI] Compiled with patch version 0, using 0
+[UI Toolkit] Running version 02:00
+[Script] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\scriptEngines
+[Script] Tinypy INFO - Registering group addons
+[Script] Tinypy INFO - 	Registering: help
+[Script] Tinypy INFO - 	Registering: get_folder_content
+[Script] Tinypy INFO - 	Registering: get_file_size
+[Script] Tinypy INFO - 	Registering: basename
+[Script] Tinypy INFO - 	Registering: dirname
+[Script] Tinypy INFO - Registering class: Avidemux
+[Script] Tinypy INFO - Registering class: Editor
+[Script] Tinypy INFO - Registering class: Gui
+[Script] Tinypy INFO - Registering class: DFToggle
+[Script] Tinypy INFO - Registering class: DFInteger
+[Script] Tinypy INFO - Registering class: DFMenu
+[Script] Tinypy INFO - Registering class: DFTimeStamp
+[Script] Tinypy INFO - Registering class: DialogFactory
+[Script] Tinypy INFO - Registering group test
+[Script] Tinypy INFO - 	Registering: testAssert
+[Script] Tinypy INFO - 	Registering: testCrash
+[Script] Tinypy INFO - 	Registering: testSub
+[Script] Tinypy INFO - Registering static class os
+[Script] Tinypy INFO - 	Registering: environ
+[Script] Tinypy INFO - Python initialised
+[Script] loaded D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\scriptEngines/libADM_script_tinyPy.dll
+[Script] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\scriptEngines/qt5
+[buildDirectoryContent] 03:29:01-496 Cannot list content of D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\scriptEngines/qt5
+The screen seems to be 1280 x 680 px
+[admPreview::destroy] 03:29:02-349 Destroying preview
+[renderDisplayResize] 03:29:02-349 Render to 0x0 zoom=1.0000, old one =0 x 0, zoom=1.0000, renderer=0000000000000000
+[UI_resize] 03:29:02-349 Resizing the main window to 134x223 px
+[RDR] Resizing to 0 x 0
+[initGUI] 03:29:02-404 OpenGL enabled at built time, checking if we should run it..
+[initGUI] 03:29:02-404 OpenGL not activated, not initialized
+Probing for DXVA2...
+[admD3D_initD3D9Ex] 03:29:02-434 Probing for D3D9EX support
+[admD3D_initD3D9Ex] 03:29:02-457 D3D library loaded in D3D9Ex mode, Checking Adapater display mode
+[admD3D_initD3D9Ex] 03:29:02-457 Display is 1280 x 720, fmt=0x16
+[admD3D_initD3D9Ex] 03:29:02-457 D3D Device: NVIDIA GeForce GT 710, Vendor: 10de, Device: 128b, Rev: a1, Driver Version: 7318439589710976
+[admD3D_initD3D9Ex] 03:29:02-457 Creating Device9EX
+[admD3D_initD3D9Ex] 03:29:02-549 D3D:d3d9Ex core successfully initialized
+[admDxva2::init] 03:29:02-549 Dxva2 init step1
+[admDxva2::init] 03:29:02-549 Dxva2 core successfully initialized
+[admDxva2::init] 03:29:02-549 Decoder service=00000156337E3E38
+Potential device_guid :
+0x1b81be69 0xa0c7 0x11d3  b9  84  00  c0  4f  2e  73  c5 
+Potential device_guid :
+0x1b81be68 0xa0c7 0x11d3  b9  84  00  c0  4f  2e  73  c5 
+[checkDecoderConfiguration] 03:29:02-549 	 has raw bistream
+[checkDecoderConfiguration] 03:29:02-549 	 has no encrypt
+[checkDecoderConfiguration] 03:29:02-549 	 best score
+[checkDecoderConfiguration] 03:29:02-549 	 has h264 raw bistream2
+[checkDecoderConfiguration] 03:29:02-549 	 has no encrypt
+[checkDecoderConfiguration] 03:29:02-549 	 best score
+[lookupCodec] 03:29:02-549 DXVA2 support for  H264 found
+Potential device_guid :
+0x5b11d51b 0x2f4c 0x4452  bc  c3  09  f2  a1  16  0c  c0 
+[checkDecoderConfiguration] 03:29:02-549 	 has raw bistream
+[checkDecoderConfiguration] 03:29:02-549 	 has no encrypt
+[checkDecoderConfiguration] 03:29:02-549 	 best score
+[lookupCodec] 03:29:02-549 DXVA2 support for  H265 found
+Potential device_guid :
+0x5b11d51b 0x2f4c 0x4452  bc  c3  09  f2  a1  16  0c  c0 
+Potential device_guid :
+0x107af0e0 0xef1a 0x4d19  ab  a8  67  a1  63  07  3d  13 
+[lookupCodec] 03:29:02-549 No decoder device for codec H265 found
+[admDxva2::init] 03:29:02-549 Scanning supported format done
+DXVA2 available
+[ADM_ad_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioDecoder
+[tryLoadingAudioPlugin] 03:29:02-550 [ADM_ad_plugin] Plugin loaded version 0.0.1, name libADM_ad_a52.dll, desc: LibAC3 decoder plugin for avidemux (c) Mean
+
+[tryLoadingAudioPlugin] 03:29:02-550 [ADM_ad_plugin] Plugin loaded version 0.0.1, name libADM_ad_ima_adpcm.dll, desc: IMA ADPCM decoder plugin for avidemux (c) Mean
+
+[tryLoadingAudioPlugin] 03:29:02-551 [ADM_ad_plugin] Plugin loaded version 0.0.1, name libADM_ad_lav.dll, desc: Lavcodec decoder plugin for avidemux (c) Mean/Gruntster
+
+[tryLoadingAudioPlugin] 03:29:02-551 [ADM_ad_plugin] Plugin loaded version 0.0.1, name libADM_ad_Mad.dll, desc: LibMad decoder plugin for avidemux (c) Mean
+
+[tryLoadingAudioPlugin] 03:29:02-551 [ADM_ad_plugin] Plugin loaded version 0.0.1, name libADM_ad_ms_adpcm.dll, desc: Ulaw decoder plugin for avidemux (c) Mean
+
+[tryLoadingAudioPlugin] 03:29:02-552 [ADM_ad_plugin] Plugin loaded version 1.0.0, name libADM_ad_opencore_amrnb.dll, desc: opencore-amrnb decoder plugin for Avidemux (c) Mean/Gruntster
+
+[tryLoadingAudioPlugin] 03:29:02-552 [ADM_ad_plugin] Plugin loaded version 1.0.0, name libADM_ad_opencore_amrwb.dll, desc: opencore-amrwb decoder plugin for Avidemux (c) Mean/Gruntster
+
+[tryLoadingAudioPlugin] 03:29:02-553 [ADM_ad_plugin] Plugin loaded version 0.0.1, name libADM_ad_opus.dll, desc: libOpus decoder plugin for avidemux (c) Mean
+
+[tryLoadingAudioPlugin] 03:29:02-554 [ADM_ad_plugin] Plugin loaded version 0.0.1, name libADM_ad_ulaw.dll, desc: Ulaw decoder plugin for avidemux (c) Mean
+
+[tryLoadingAudioPlugin] 03:29:02-555 [ADM_ad_plugin] Plugin loaded version 0.0.1, name libADM_ad_vorbis.dll, desc: libVorbis decoder plugin for avidemux (c) Mean
+
+[ADM_ad_plugin] Scanning done, found 10 codec
+[ADM_av_loadPlugins] 03:29:02-555 [ADM_av_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioDevices
+[ADM_AudioDevices::ADM_AudioDevices] 03:29:02-555 Name :Win32 ApiVersion :2
+[tryLoadingFilterPlugin] 03:29:02-555 [Filters] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioDevices/libADM_av_win32.dll as  Win32 audio device (c) mean
+[ADM_av_loadPlugins] 03:29:02-555 [ADM_av_plugin] Scanning done
+[ADM_ae_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders
+[AudioEncoder] Loaded Aften version 01.00.00 wavTag :0x2000
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_aften.dll as  Aften AC3 encoder plugin Mean/Gruntster 2008
+[AudioEncoder] Loaded FDK_AAC version 01.00.00 wavTag :0xff
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_fdk_aac.dll as  FDK AAC encoder plugin Mean 2016
+[AudioEncoder] Loaded Lame version 01.00.00 wavTag :0x55
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_lame.dll as  Lame MP3 encoder plugin Mean 2009
+[AudioEncoder] Loaded LavAAC version 01.00.00 wavTag :0xff
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_lav_aac.dll as  AAC LavCodec encoder plugin Mean 2008/2016
+[AudioEncoder] Loaded LavAC3 version 01.00.00 wavTag :0x2000
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_lav_ac3.dll as  AC3 LavCodec encoder plugin Mean 2008/2009
+[AudioEncoder] Loaded LavMP2 version 01.00.00 wavTag :0x50
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_lav_mp2.dll as  MP2 LavCodec encoder plugin Mean 2008/2009
+[AudioEncoder] Loaded Opus version 01.00.00 wavTag :0x26ae
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_opus.dll as  Opus encoder plugin Mean 2017
+[AudioEncoder] Loaded PCM version 01.00.00 wavTag :0x1
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_pcm.dll as  PCM encoder plugin Mean 2008
+[AudioEncoder] Loaded TwoLame version 01.00.00 wavTag :0x50
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_twolame.dll as  TwoLame MP2 encoder plugin Mean 2008
+[AudioEncoder] Loaded Vorbis version 01.00.00 wavTag :0x676f
+[AudioEncoder] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\audioEncoders/libADM_ae_vorbis.dll as  Vorbis encoder plugin Mean 2008
+[ADM_ae_plugin] Scanning done
+[ADM_dm_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers
+[Demuxer]Name :asf ApiVersion :3 Description :asf/wmv demuxer plugin (c) Mean 2007/2009
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_asf.dll as  asf/wmv demuxer plugin (c) Mean 2007/2009
+[Demuxer]Name :avs ApiVersion :3 Description :avsProxy demuxer plugin (c) Mean 2007/2010
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_avsproxy.dll as  avsProxy demuxer plugin (c) Mean 2007/2010
+[Demuxer]Name :flv ApiVersion :3 Description :flash demuxer plugin (c) Mean 2007/2007
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_flv.dll as  flash demuxer plugin (c) Mean 2007/2007
+[Demuxer]Name :mkv ApiVersion :3 Description :Matroska demuxer plugin (c) Mean 2007/2008
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_matroska.dll as  Matroska demuxer plugin (c) Mean 2007/2008
+[Demuxer]Name :mp4 ApiVersion :3 Description :Mp4/Mov/3GP demuxer plugin (c) Mean 2007/2008
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_mp4.dll as  Mp4/Mov/3GP demuxer plugin (c) Mean 2007/2008
+[Demuxer]Name :MXF ApiVersion :3 Description :MXF demuxer plugin (c) Mean 2010
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_mxf.dll as  MXF demuxer plugin (c) Mean 2010
+[Demuxer]Name :navs ApiVersion :3 Description :native avs demuxer plugin (c) Mean 2018
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_nativeAvs.dll as  native avs demuxer plugin (c) Mean 2018
+[Demuxer]Name :openDml ApiVersion :3 Description :AVI/OpenDML demuxer plugin (c) Mean 2007/2007
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_opendml.dll as  AVI/OpenDML demuxer plugin (c) Mean 2007/2007
+[Demuxer]Name :picture ApiVersion :3 Description :Picture demuxer plugin (c) Mean 2007/2008
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_pic.dll as  Picture demuxer plugin (c) Mean 2007/2008
+[Demuxer]Name :ps ApiVersion :3 Description :mpeg ps demuxer plugin (c) Mean 2007/2008
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_ps.dll as  mpeg ps demuxer plugin (c) Mean 2007/2008
+[Demuxer]Name :ts ApiVersion :3 Description :mpeg ts demuxer plugin (c) Mean 2007/2009
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_ts.dll as  mpeg ts demuxer plugin (c) Mean 2007/2009
+[Demuxer]Name :vs ApiVersion :3 Description :VapourSynth demuxer plugin (c) Mean 2015
+[Demuxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\demuxers/libADM_dm_vapoursynth.dll as  VapourSynth demuxer plugin (c) Mean 2015
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : ts, priority :90
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : avs, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : flv, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : mkv, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : mp4, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : MXF, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : navs, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : openDml, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : picture, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : asf, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : vs, priority :50
+[ADM_dm_loadPlugins] 03:29:02-566 Demuxer plugin : ps, priority :10
+[ADM_dm_plugin] Scanning done, 12 demuxers found
+[ADM_mx_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers
+[Muxer]Name :AVI ApiVersion :9 Description :AVI muxer plugin (c) Mean 2008
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_avi.dll as  AVI muxer plugin (c) Mean 2008
+[Muxer]Name :dummy ApiVersion :9 Description :dummy2 muxer plugin (c) Mean 2008
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_dummy.dll as  dummy2 muxer plugin (c) Mean 2008
+[Muxer]Name :ffPS ApiVersion :9 Description :ffMpeg PS muxer plugin (c) Mean 2009
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_ffPS.dll as  ffMpeg PS muxer plugin (c) Mean 2009
+[Muxer]Name :ffTS ApiVersion :9 Description :ffMpeg TS muxer plugin (c) Mean 2009
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_ffTS.dll as  ffMpeg TS muxer plugin (c) Mean 2009
+[Muxer]Name :FLV ApiVersion :9 Description :FLV muxer plugin (c) Mean 2008
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_flv.dll as  FLV muxer plugin (c) Mean 2008
+[Muxer]Name :MKV ApiVersion :9 Description :Matroska muxer plugin (c) Mean 2009
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_Mkv.dll as  Matroska muxer plugin (c) Mean 2009
+[Muxer]Name :MP4 ApiVersion :9 Description :MP4 muxer plugin (c) Mean 2009
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_mp4.dll as  MP4 muxer plugin (c) Mean 2009
+[Muxer]Name :RAW ApiVersion :9 Description :RAW muxer plugin (c) Mean 2008
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_raw.dll as  RAW muxer plugin (c) Mean 2008
+[Muxer]Name :Webm ApiVersion :9 Description :Webm muxer plugin (c) Mean 2009
+[Muxers] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\muxers/libADM_mx_Webm.dll as  Webm muxer plugin (c) Mean 2009
+[ADM_mx_plugin] Scanning done
+[ADM_vd6_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoDecoders
+[buildDirectoryContent] 03:29:02-570 Cannot list content of D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoDecoders
+[ADM_vd6_plugin] Scanning done
+[ADM_ve6_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders
+[videoEncoder6]Name :ffDv ApiVersion :7 Description :Simple ffmpeg based DV Encoder (c) 2013 Mean
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_ffDv.dll as  Simple ffmpeg based DV Encoder (c) 2013 Mean
+[videoEncoder6]Name :ffFlv1 ApiVersion :7 Description :Simple ffmpeg based Flv1 Encoder (c) 2009 Mean
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_ffFlv1.dll as  Simple ffmpeg based Flv1 Encoder (c) 2009 Mean
+[videoEncoder6]Name :ffMpeg2 ApiVersion :7 Description :Simple ffmpeg based Mpeg2 Encoder (c) 2009 Mean
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_ffMpeg2.dll as  Simple ffmpeg based Mpeg2 Encoder (c) 2009 Mean
+[videoEncoder6]Name :ffNvEnc ApiVersion :7 Description :Nvidia hw encoder
+[nvCheckDll] 03:29:02-574 	 checking nvcuda.dll-> 1
+[nvCheckDll] 03:29:02-574 	 checking nvEncodeAPI64.dll-> 1
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_ffNvenc.dll as  Nvidia hw encoder
+[videoEncoder6]Name :ffNvEncHEVC ApiVersion :7 Description :Nvidia hw encoder
+[nvCheckDll] 03:29:02-576 	 checking nvcuda.dll-> 1
+[nvCheckDll] 03:29:02-577 	 checking nvEncodeAPI64.dll-> 1
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_ffNvencHEVC.dll as  Nvidia hw encoder
+[videoEncoder6]Name :HUFFYUV ApiVersion :7 Description :FF Huffyuv (c) 2009 Mean
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_huff.dll as  FF Huffyuv (c) 2009 Mean
+[videoEncoder6]Name :Mjpeg ApiVersion :7 Description :Simple jpeg Encoder (c) 2009 Mean
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_jpeg.dll as  Simple jpeg Encoder (c) 2009 Mean
+[videoEncoder6]Name :null ApiVersion :7 Description :Null Encoder (c) 2010 Mean
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_null.dll as  Null Encoder (c) 2010 Mean
+[videoEncoder6]Name :x264 ApiVersion :7 Description :x264 based mpeg4 AVC Encoder (c) 2010 Mean/Gruntster
+D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_x264_other.dll:WrongUI
+[videoEncoder6]Name :x265 ApiVersion :7 Description :x265 based HEVC Encoder (c) 2014 Mean/Gruntster
+D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_x265_other.dll:WrongUI
+[videoEncoder6]Name :xvid4 ApiVersion :7 Description :Xvid4 based mpeg4 Encoder (c) 2010 Mean/Gruntster
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_xvid4.dll as  Xvid4 based mpeg4 Encoder (c) 2010 Mean/Gruntster
+[videoEncoder6]Name :YV12Encoder ApiVersion :7 Description :Simple YV12 Encoder (c) 2009 Mean
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/libADM_ve_yv12.dll as  Simple YV12 Encoder (c) 2009 Mean
+[ADM_ve6_plugin] Scanning done
+[ADM_ve6_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/qt5
+[videoEncoder6]Name :x264 ApiVersion :7 Description :x264 based mpeg4 AVC Encoder (c) 2010 Mean/Gruntster
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/qt5/libADM_ve_x264_QT5.dll as  x264 based mpeg4 AVC Encoder (c) 2010 Mean/Gruntster
+[videoEncoder6]Name :x265 ApiVersion :7 Description :x265 based HEVC Encoder (c) 2014 Mean/Gruntster
+[VideoEncoder6] Registered filter D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoEncoders/qt5/libADM_ve_x265_QT5.dll as  x265 based HEVC Encoder (c) 2014 Mean/Gruntster
+[ADM_ve6_plugin] Scanning done
+[ADM_vf_plugin] Scanning directory D:\Program Files\Avidemux 2.7 VC++ 64bits\plugins\videoFilters
+[parseOneFolder] 03:29:02-584 Feature Mask = 0x0
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name addBorder/Add Borders
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name admIvtc/ADM ivtc.
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name AsciiView/Ascii View
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name black/Black
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name changeFps/Change FPS
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name colorYuv/Avisynth color filter.
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name MplayerDenoise3D/Mplayer Denoise 3D
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name MplayerDenoise3DHQ/Mplayer Denoise 3D HQ
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name dgbob/dgbob
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name dummy/Dummy
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name fadeTo/Fade
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name fadeToBlack/Fade to black
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name Gaussian/Gaussian convolution.
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name hflip/Horizontal Flip
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name hzstackfield/Horizontal Stack Fields
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name ivtcRemover/Remove IVTC dupe.
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name kerndelDeint/Kernel Deint.
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name largeMedian/Large Median (5x5).
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name lavdeint/Libavdec Deinterlacers
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name lumaonly/GreyScale
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name Mean/Mean convolution.
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name Median/Median convolution.
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name mergefields/Merge Fields
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name printInfo/PrintInfo
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name rplane/Remove  Plane
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name resampleFps/Resample FPS
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name rotate/Rotate
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name SeparateFields/Separate Fields
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name Sharpen/Sharpen convolution.
+[ADM_vf_plugin] Plugin loaded version 1.0.1, name ssa/SSA/ASS/SRT
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name stackField/Stack Fields
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name stillimage/Still Image
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name swapUV/Swap UV
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name unstackField/Unstack Fields
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name vflip/Vertical Flip
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name yadif/Yadif
+[ADM_vf_plugin] Scanning done, found 36 video filer(s) so far
+[parseOneFolder] 03:29:02-599 Feature Mask = 0x0
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name asharp/Asharp
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name blackenBorder/Blacken Borders
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name chromashift/ChromaShift
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name contrast/Contrast
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name crop/Crop
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name eq2/MPlayer eq2
+[tryLoadingVideoFilterPlugin] 03:29:02-602 [ADM_vf_plugin] OpenGl ReadBack benchmark needs features that are not active
+[tryLoadingVideoFilterPlugin] 03:29:02-602 [ADM_vf_plugin] OpenGl Resize needs features that are not active
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name hue/Mplayer Hue
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name addLogo/Add logo
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name mpdelogo2/MPlayer delogo2
+[ADM_vf_plugin] Plugin loaded version 1.0.0, name msharpen/Msharpen
+[tryLoadingVideoFilterPlugin] 03:29:02-605 [ADM_vf_plugin] OpenGl Rotate needs features that are not active
+[tryLoadingVideoFilterPlugin] 03:29:02-605 [ADM_vf_plugin] OpenGl Fragment Shader Sample2 needs features that are not active
+[tryLoadingVideoFilterPlugin] 03:29:02-606 [ADM_vf_plugin] OpenGl wave  needs features that are not active
+[tryLoadingVideoFilterPlugin] 03:29:02-606 [ADM_vf_plugin] Shader Loader needs features that are not active
+[ADM_vf_plugin] Plugin loaded version 1.0.1, name swscale/swsResize
+[ADM_vf_plugin] Scanning done, found 47 video filer(s) so far
+[win32AudioDevice::win32AudioDevice] 03:29:02-607 [Win32] Creating audio device
+[initDXVA2Decoder] 03:29:02-607 Registering DXVA2 hw decocer
+Found 13 video encoder(s)
+Found 11 audio encoder(s)
+Found 9 format(s)
+[UI_RunApp] 03:29:02-607 Load default settings if any... 
+[ADM_Composer::setContainer] 03:29:02-608 setting container as index 4
+[QVideo] Using default redraw-------------->
+<--------------[QVideo]/ Using default redraw
+[myQApplication::postInit] 03:29:02-618 myQApplication exec
+[myQApplication::postInit] 03:29:02-618 Checking for crash...
+0 : C:\Users\citra\AppData\Roaming\avidemux\/lastEdit.py
+No crash file (C:\Users\citra\AppData\Roaming\avidemux\crash.py)
+[HandleAction] 03:29:07-280 ************ ACT_SCRIPT_ENGINE **************
+[Script] Tinypy INFO - Executing C:/Users/citra/Videos/Logitech/LogiCapture/FINAL-6-APRIL/report-4d-fill-db.py...
+[TS Demuxer] Probing...
+[checkMarker] 03:29:09-377 [Ts Demuxer] Sync ok :15 Sync ko :3716
+[checkMarker] 03:29:09-378 [Ts Demuxer] Sync ok :11 Sync ko :3733
+[detectTs] 03:29:09-378 [TS Demuxer] Not a TS file
+ [TS Demuxer] Not a ts file
+ [avsProxy] Cannot open that
+ [flvHeader] Cannot open that
+ [mkvHeader] Cannot open that
+Match ftyp
+ [MP4]MP4/MOV/3GP file detected...
+ [mxfHeader] Cannot open that (24000000)
+[probe] 03:29:09-378  [avsProxy] Cannot open that
+ [openDML] Cannot open that
+[probe] 03:29:09-378  [picHeader] Cannot open that
+[probe] 03:29:09-378 [asfHeader] Cannot open that
+[vsDynaLoader::vsInit] 03:29:09-380 Cannot load the vapoursynth-script library
+ match :10 / 455 (probeSize:1048576)
+ [PS Demuxer] Not a ps file
+** opening 3gpp files **[MP4Header::lookupMainAtoms] 03:29:09-381 Analyzing file and atoms
+[MP4Header::parseMvhd] 03:29:09-381 Warning: movie scale is 1000
+[MP4Header::parseTrack] 03:29:09-381 Parsing Track
+[MP4Header::parseMdia] 03:29:09-381 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-381 hdlr video found 
+ [MP4Header::parseStbl] 03:29:09-381 <<Parsing Stbl>>
+[MP4Header::parseStbl] 03:29:09-381 [STSD] VIDEO avc1, size 132
+[STSD] vendor 
+[STSD] width :1280
+[STSD] height :720
+[STSD] datasize :0
+[STSD] FrameCount :1
+Codec string :0 <>
+LEFT:44
+Reading avcC, got avcC
+avcC size:38
+avcC Revision             :1
+avcC AVCProfileIndication :64
+avcC profile_compatibility:0
+avcC AVCLevelIndication   :1f
+avcC lengthSizeMinusOne   :ff
+avcC NumSeq               :e1
+avcC sequenceParSetLen    :17 
+ 0000 : gd...+@(.......@   67 64 00 1f ac 2b 40 28 02 dd 80 88 00 00 1f 40
+ 0010 : ....x..            00 06 1a 84 78 e1 95
+avcC numOfPictureParSets  :1
+avcC Pic len              :4
+
+ 0000 : .h.<               04 68 ee 3c
+[MP4Header::parseStbl] 03:29:09-381 stts:0
+[MP4Header::parseStbl] 03:29:09-381 Time stts atom found (11)
+[MP4Header::parseStbl] 03:29:09-381 Using myscale 12800
+[MP4Header::parseStbl] 03:29:09-381 Stss:711
+[MP4Header::parseStbl] 03:29:09-382 ctts:0
+[MP4Header::parseStbl] 03:29:09-382 Found 21288 elements
+[MP4Header::parseStbl] 03:29:09-382 0 frames /21288 nbsz..
+[MP4Header::parseStbl] 03:29:09-384 		nbCo: 711
+[MP4Header::indexify] 03:29:09-384 Build Track index
+[MP4Header::indexify] 03:29:09-385 Index done
+[MP4Header::parseStbl] 03:29:09-385 Movie duration = 852057
+[MP4Header::parseStbl] 03:29:09-385 # images = 21288
+[MP4Header::parseStbl] 03:29:09-385 Avg fps 24984.244141
+[MP4Header::updateCtts] 03:29:09-385 [MP4]**************** Updating CTTS **********************
+[MP4Header::parseTrack] 03:29:09-385 Parsing Track
+[MP4Header::parseMdia] 03:29:09-385 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-385 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:09-385 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:09-385 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:09-385 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:09-385 stts:0
+[MP4Header::parseStbl] 03:29:09-385 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:09-385 Using myscale 48000
+[MP4Header::parseStbl] 03:29:09-385 0 frames /39935 nbsz..
+[MP4Header::parseStbl] 03:29:09-390 		nbCo: 710
+Cur audio track :0
+[MP4Header::indexify] 03:29:09-390 Build Track index
+[MP4Header::splitAudio] 03:29:09-391 No very large blocks found, 20837729 bytes present over 39935 blocks
+[MP4Header::indexify] 03:29:09-391 Index done
+[MP4Header::parseStbl] 03:29:09-391 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:09-391 Indexed audio, nb blocks:39935 (final)
+[MP4Header::parseTrack] 03:29:09-391 Parsing Track
+[MP4Header::parseMdia] 03:29:09-391 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-391 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:09-391 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:09-391 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:09-392 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:09-392 stts:0
+[MP4Header::parseStbl] 03:29:09-392 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:09-392 Using myscale 48000
+[MP4Header::parseStbl] 03:29:09-392 0 frames /39935 nbsz..
+[MP4Header::parseStbl] 03:29:09-396 		nbCo: 710
+Cur audio track :1
+[MP4Header::indexify] 03:29:09-396 Build Track index
+[MP4Header::splitAudio] 03:29:09-397 No very large blocks found, 20836686 bytes present over 39935 blocks
+[MP4Header::indexify] 03:29:09-397 Index done
+[MP4Header::parseStbl] 03:29:09-397 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:09-397 Indexed audio, nb blocks:39935 (final)
+[MP4Header::parseTrack] 03:29:09-397 Parsing Track
+[MP4Header::parseMdia] 03:29:09-397 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-397 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:09-397 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:09-397 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:09-397 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:09-397 stts:0
+[MP4Header::parseStbl] 03:29:09-397 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:09-397 Using myscale 48000
+[MP4Header::parseStbl] 03:29:09-397 0 frames /39935 nbsz..
+[MP4Header::parseStbl] 03:29:09-402 		nbCo: 710
+Cur audio track :2
+[MP4Header::indexify] 03:29:09-402 Build Track index
+[MP4Header::splitAudio] 03:29:09-403 No very large blocks found, 12499592 bytes present over 39935 blocks
+[MP4Header::indexify] 03:29:09-403 Index done
+[MP4Header::parseStbl] 03:29:09-403 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:09-403 Indexed audio, nb blocks:39935 (final)
+[MP4Header::parseTrack] 03:29:09-403 Parsing Track
+[MP4Header::parseMdia] 03:29:09-403 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-403 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:09-403 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:09-403 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:09-403 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:09-403 stts:0
+[MP4Header::parseStbl] 03:29:09-403 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:09-403 Using myscale 48000
+[MP4Header::parseStbl] 03:29:09-403 0 frames /39935 nbsz..
+[MP4Header::parseStbl] 03:29:09-407 		nbCo: 710
+Cur audio track :3
+[MP4Header::indexify] 03:29:09-408 Build Track index
+[MP4Header::splitAudio] 03:29:09-408 No very large blocks found, 20837755 bytes present over 39935 blocks
+[MP4Header::indexify] 03:29:09-409 Index done
+[MP4Header::parseStbl] 03:29:09-409 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:09-409 Indexed audio, nb blocks:39935 (final)
+[MP4Header::lookupMainAtoms] 03:29:09-409 Done finding main atoms
+
+[MP4Header::adjustElstDelay] 03:29:09-409 Delay for track 0 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-409 Start offset for track 0 : raw = 0, scaled = 0 with scale = 12800
+[MP4Header::adjustElstDelay] 03:29:09-409 Delay for track 1 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-409 Start offset for track 1 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:09-409 Delay for track 2 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-409 Start offset for track 2 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:09-409 Delay for track 3 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-409 Start offset for track 3 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:09-409 Delay for track 4 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-409 Start offset for track 4 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:09-409 Elst minimum = 0 us
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:09-409 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:09-409 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:09-409 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:09-409 Estimating audio byterate...
+[MP4Header::open] 03:29:09-409 3gp/mov file successfully read..
+[MP4Header::open] 03:29:09-409 Last PTS is at or after movie duration, increasing movie duration
+[MP4Header::open] 03:29:09-409 Adjusted fps1000: 24983 = 40027 us per frame.
+[MP4Header::refineFps] 03:29:09-409 MinDelta=40000 us
+[MP4Header::refineFps] 03:29:09-409 Computed fps1000=25000
+[MP4Header::refineFps] 03:29:09-409 Original fps1000 = 24983, score = 42564, weighted score = 1999
+[MP4Header::refineFps] 03:29:09-409 Adjusting fps, the computed is higher than average, dropped frames ?
+[MP4Header::open] 03:29:09-409 Nb images       : 21288
+[MP4Header::open] 03:29:09-409 Movie duration  : 00:14:12,098
+[MP4Header::open] 03:29:09-409 Last video PTS  : 00:14:12,097
+[MP4Header::open] 03:29:09-409 Last video DTS  : 00:14:12,017
+[Editor]The video codec has some extradata (38 bytes)
+
+ 0000 : .d......gd...+@(   01 64 00 1f ff e1 00 17 67 64 00 1f ac 2b 40 28
+ 0010 : .......@....x...   02 dd 80 88 00 00 1f 40 00 06 1a 84 78 e1 95 01
+ 0020 : ..h.<.             00 04 68 ee 3c b0
+[ADM_PP::ADM_PP] 03:29:09-410 Initializing postproc
+[ADM_PP::cleanup] 03:29:09-410 Deleting post proc
+[ADM_PP::update] 03:29:09-410 updating post proc
+[ADM_PP::update] 03:29:09-411 Enabled type:3 strength:3
+[ADM_Composer::addFile] 03:29:09-411 Clearing video filters
+[ADM_vf_clearFilters] 03:29:09-411 clear filters
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:09-411 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-411  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-411  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-411 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-413 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-413 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_edAudioTrackFromVideo::ADM_edAudioTrackFromVideo] 03:29:09-413 Creating edAudio from video track 0 at 3b36f1b0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:09-413 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-413  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-413  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-413 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-414 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-414 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_edAudioTrackFromVideo::ADM_edAudioTrackFromVideo] 03:29:09-414 Creating edAudio from video track 1 at 3b38e2f0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:09-414 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-414  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-414  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-414 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-414 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-414 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_edAudioTrackFromVideo::ADM_edAudioTrackFromVideo] 03:29:09-415 Creating edAudio from video track 2 at 3ba526e0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:09-415 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-415  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-415  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-415 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-415 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-415 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_edAudioTrackFromVideo::ADM_edAudioTrackFromVideo] 03:29:09-415 Creating edAudio from video track 3 at 3bb0aea0
+[Editor] Decoder FCC: H264 (34363248)
+[ADM_getDecoder] 03:29:09-415 Searching decoder in plugins
+[tryCreatingVideoDecoder] 03:29:09-415 No decoder found in plugin
+[ADM_getDecoder] 03:29:09-415 Searching decoder in coreVideoCodec(1280 x 720, extradataSize:38)...
+[ADM_coreCodecGetDecoder] 03:29:09-415 Searching decoder in coreVideoCodec(1280 x 720, extradataSize:38)...
+[lavc] Build: 3810148
+[decoderFFH264::decoderFFH264] 03:29:09-415 [lavc] Initializing H264 decoder with 38 extradata
+[decoderFFH264::decoderFFH264] 03:29:09-416 [lavc] Decoder init: AV_CODEC_ID_H264 video decoder initialized! (H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10)
+[EditorCache::EditorCache] 03:29:09-416 Video cache created for 16 decoded images.
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-416 Original frame increment 00:00:00,040 = 40000 us
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-416 min increment 00:00:00,040 = 40000 us for frame 2
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-416 max increment 00:00:00,168 = 168984 us for frame 11867
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-416 About 40000 microseconds per frame
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-416 The first frame DTS = 0 ms
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-416 The first frame has a PTS > 0, adjusting to 80 ms
+[ADM_EditorSegment::updateStartTime] 03:29:09-416 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_verifyDts] 03:29:09-416 Verifying DTS....
+[ADM_verifyDts] 03:29:09-416 Checking from 1 to 21288
+[ADM_verifyDts] 03:29:09-417 Pass 2..
+[ADM_verifyDts] 03:29:09-417 DTS verified
+[Editor] B- frame possible with that codec 
+[ADM_Composer::addFile] 03:29:09-417 [Editor] This is H264, check if we can fill missing PTS
+[ADM_setH264MissingPts] 03:29:09-417 We have 0 missing PTS
+[ADM_Composer::addFile] 03:29:09-417 H264 sometimes has invalid timestamps which confuse avidemux, checking
+[ADM_Composer::seektoTime] 03:29:09-417 Seeking to a keyframe at 80 ms
+[ADM_Composer::seektoTime] 03:29:09-417 Seeking to frame 0 at 80 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:09-417 Decoding up to intra frame 0, ref: 0
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:09-417 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:09-417 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:09-417 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:09-431 Seek done, in reference, gone to 80000 with segment start at 0
+[ADM_Composer::checkForValidPts] 03:29:09-431 Checking file for broken PTS...
+[ADM_Composer::checkForValidPts] 03:29:09-431 Checking 100 frames out of 21288.
+[ADM_Composer::seektoTime] 03:29:09-638 Seeking to a keyframe at 80 ms
+[ADM_Composer::seektoTime] 03:29:09-638 Seeking to frame 0 at 80 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:09-638 Decoding up to intra frame 0, ref: 0
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:09-638 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:09-638 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:09-638 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:09-650 Seek done, in reference, gone to 80000 with segment start at 0
+[ADM_Composer::checkForValidPts] 03:29:09-654 -------- Stats :----------
+[ADM_Composer::checkForValidPts] 03:29:09-654 nbBFrames:0
+[ADM_Composer::checkForValidPts] 03:29:09-654 nbPFrames:97
+[ADM_Composer::checkForValidPts] 03:29:09-654 nbIFrames:3
+[ADM_Composer::checkForValidPts] 03:29:09-654 nbNoImage:0
+[ADM_Composer::checkForValidPts] 03:29:09-654 nbPtsgoingBack:0
+[ADM_Composer::checkForValidPts] 03:29:09-654 -------- /Stats ----------
+[ADM_Composer::seektoTime] 03:29:09-654 Seeking to a keyframe at 80 ms
+[ADM_Composer::seektoTime] 03:29:09-654 Seeking to frame 0 at 80 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:09-654 Decoding up to intra frame 0, ref: 0
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:09-654 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:09-654 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:09-654 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:09-666 Seek done, in reference, gone to 80000 with segment start at 0
+[ADM_Composer::checkForDoubledFps] 03:29:09-666 Checking for doubled FPS.., time increment ceiling = 72000
+[ADM_Composer::checkForDoubledFps] 03:29:09-667 Checking DTS...
+[checkTiming] 03:29:09-667 	Good : 5
+[checkTiming] 03:29:09-667 	Bad  : 21282
+[ADM_Composer::checkForDoubledFps] 03:29:09-667 Checking PTS...
+[checkTiming] 03:29:09-667 	Good : 5
+[checkTiming] 03:29:09-667 	Bad  : 21282
+[ADM_Composer::checkForDoubledFps] 03:29:09-667 Cannot halve fps
+[admPreview::destroy] 03:29:09-667 Destroying preview
+[renderDisplayResize] 03:29:09-667 Render to 1280x720 zoom=0.5000, old one =0 x 0, zoom=1.0000, renderer=0000000000000000
+[dxvaRender::dxvaRender] 03:29:09-667 creating Dxva2/D3D render.
+[dxvaRender::init] 03:29:09-667 Initializing dxva2/D3D render
+[dxvaRender::init] 03:29:09-667 D3D Checking device capabilities
+[dxvaRender::init] 03:29:09-667 Power of 2 : 0
+[dxvaRender::init] 03:29:09-667 Square only: 0
+[dxvaRender::init] 03:29:09-667 D3D YV12 is supported
+[dxvaRender::setup] 03:29:09-667 D3D (re)Setting up 
+[dxvaRender::setup] 03:29:09-707 DXVA2Render : device created in D3D9Ex mode
+[dxvaRender::setup] 03:29:09-708 Setup done
+[dxvaRender::init] 03:29:09-708 Dxva (D3D) init successful, dxva render. w=1280, h=720, zoom=0.5000, displayWidth=640, displayHeight=360
+[spawnRenderer] 03:29:09-708 Dxva2 init ok
+[UI_resize] 03:29:09-713 Resizing the main window to 818x583 px
+[dxvaRender::draw] 03:29:09-722 D3D : Draw!
+[dxvaRender::refresh] 03:29:09-722 Refresh**
+[dxvaRender::draw] 03:29:09-755 D3D : Draw!
+[dxvaRender::refresh] 03:29:09-755 Refresh**
+[RDR] Resizing to 640 x 360
+[renderCompleteRedrawRequest] 03:29:09-756 RedrawRequest
+[dxvaRender::draw] 03:29:09-756 D3D : Draw!
+[dxvaRender::refresh] 03:29:09-756 Refresh**
+[A_ResetMarkers] 03:29:09-767 Video Total duration : 00:14:12,098 ms
+[ADM_Composer::setMarkerBPts] 03:29:09-767 Selection's end point set to 00:14:12,098 (852098000 us)
+[ADM_Composer::rewind] 03:29:09-768 Rewinding
+[ADM_Composer::switchToSegment] 03:29:09-768 Trying to switch to seg 0 with startTime in reference pic= 0 ms
+[ADM_Composer::seektoTime] 03:29:09-768 Seeking to a keyframe at 80 ms
+[ADM_Composer::seektoTime] 03:29:09-768 Seeking to frame 0 at 80 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:09-768 Decoding up to intra frame 0, ref: 0
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:09-768 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:09-768 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:09-768 No Hw Accel for that
+[ADM_Composer::switchToSegment] 03:29:09-780 Switched ok to segment 0 (dontdecode=0)
+[ADM_Composer::rewind] 03:29:09-780 Rewinding
+[ADM_Composer::switchToSegment] 03:29:09-780 Trying to switch to seg 0 with startTime in reference pic= 0 ms
+[ADM_Composer::seektoTime] 03:29:09-780 Seeking to a keyframe at 80 ms
+[ADM_Composer::seektoTime] 03:29:09-780 Seeking to frame 0 at 80 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:09-780 Decoding up to intra frame 0, ref: 0
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:09-780 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:09-780 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:09-780 No Hw Accel for that
+[ADM_Composer::switchToSegment] 03:29:09-792 Switched ok to segment 0 (dontdecode=0)
+[admPreview::start] 03:29:09-792 admPreview,starting
+[updateLoaded] 03:29:09-813  conf updated 
+[AudioEncoder] Selected copy for index 0, tag 0x0 
+[A_appendVideo] 03:29:09-814 Start is 00:00:00,080, marker A is 00:00:00,080
+[A_appendVideo] 03:29:09-814 End is 00:14:12,098, marker B is 00:14:12,098
+[ADM_Composer::addToUndoQueue] 03:29:09-814 The undo queue has now 1 element(s)
+[TS Demuxer] Probing...
+[checkMarker] 03:29:09-816 [Ts Demuxer] Sync ok :8 Sync ko :3553
+[checkMarker] 03:29:09-816 [Ts Demuxer] Sync ok :13 Sync ko :3553
+[detectTs] 03:29:09-816 [TS Demuxer] Not a TS file
+ [TS Demuxer] Not a ts file
+ [avsProxy] Cannot open that
+ [flvHeader] Cannot open that
+ [mkvHeader] Cannot open that
+Match ftyp
+ [MP4]MP4/MOV/3GP file detected...
+ [mxfHeader] Cannot open that (24000000)
+[probe] 03:29:09-817  [avsProxy] Cannot open that
+ [openDML] Cannot open that
+[probe] 03:29:09-817  [picHeader] Cannot open that
+[probe] 03:29:09-817 [asfHeader] Cannot open that
+ match :5 / 455 (probeSize:1048576)
+ [PS Demuxer] Not a ps file
+** opening 3gpp files **[MP4Header::lookupMainAtoms] 03:29:09-818 Analyzing file and atoms
+[MP4Header::parseMvhd] 03:29:09-818 Warning: movie scale is 1000
+[MP4Header::parseTrack] 03:29:09-818 Parsing Track
+[MP4Header::parseMdia] 03:29:09-818 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-818 hdlr video found 
+ [MP4Header::parseStbl] 03:29:09-818 <<Parsing Stbl>>
+[MP4Header::parseStbl] 03:29:09-818 [STSD] VIDEO avc1, size 132
+[STSD] vendor 
+[STSD] width :1280
+[STSD] height :720
+[STSD] datasize :0
+[STSD] FrameCount :1
+Codec string :0 <>
+LEFT:44
+Reading avcC, got avcC
+avcC size:38
+avcC Revision             :1
+avcC AVCProfileIndication :64
+avcC profile_compatibility:0
+avcC AVCLevelIndication   :1f
+avcC lengthSizeMinusOne   :ff
+avcC NumSeq               :e1
+avcC sequenceParSetLen    :17 
+ 0000 : gd...+@(.......@   67 64 00 1f ac 2b 40 28 02 dd 80 88 00 00 1f 40
+ 0010 : ....x..            00 06 1a 84 78 e1 95
+avcC numOfPictureParSets  :1
+avcC Pic len              :4
+
+ 0000 : .h.<               04 68 ee 3c
+[MP4Header::parseStbl] 03:29:09-818 stts:0
+[MP4Header::parseStbl] 03:29:09-818 Time stts atom found (1)
+[MP4Header::parseStbl] 03:29:09-818 Using myscale 12800
+[MP4Header::parseStbl] 03:29:09-818 Stss:52
+[MP4Header::parseStbl] 03:29:09-818 ctts:0
+[MP4Header::parseStbl] 03:29:09-818 0 frames /1548 nbsz..
+[MP4Header::parseStbl] 03:29:09-818 		nbCo: 52
+[MP4Header::indexify] 03:29:09-819 Build Track index
+[MP4Header::indexify] 03:29:09-819 Index done
+[MP4Header::parseStbl] 03:29:09-819 Movie duration = 61920
+[MP4Header::parseStbl] 03:29:09-819 # images = 1548
+[MP4Header::parseStbl] 03:29:09-819 Avg fps 25000.000000
+[MP4Header::parseTrack] 03:29:09-819 Parsing Track
+[MP4Header::parseMdia] 03:29:09-819 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-819 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:09-819 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:09-819 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:09-819 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:09-819 stts:0
+[MP4Header::parseStbl] 03:29:09-819 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:09-819 Using myscale 48000
+[MP4Header::parseStbl] 03:29:09-819 0 frames /2901 nbsz..
+[MP4Header::parseStbl] 03:29:09-819 		nbCo: 52
+Cur audio track :0
+[MP4Header::indexify] 03:29:09-819 Build Track index
+[MP4Header::splitAudio] 03:29:09-819 No very large blocks found, 1510391 bytes present over 2901 blocks
+[MP4Header::indexify] 03:29:09-819 Index done
+[MP4Header::parseStbl] 03:29:09-819 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:09-819 Indexed audio, nb blocks:2901 (final)
+[MP4Header::parseTrack] 03:29:09-819 Parsing Track
+[MP4Header::parseMdia] 03:29:09-819 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-819 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:09-819 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:09-819 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:09-819 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:09-819 stts:0
+[MP4Header::parseStbl] 03:29:09-819 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:09-819 Using myscale 48000
+[MP4Header::parseStbl] 03:29:09-819 0 frames /2896 nbsz..
+[MP4Header::parseStbl] 03:29:09-820 		nbCo: 52
+Cur audio track :1
+[MP4Header::indexify] 03:29:09-820 Build Track index
+[MP4Header::splitAudio] 03:29:09-820 No very large blocks found, 1507862 bytes present over 2896 blocks
+[MP4Header::indexify] 03:29:09-820 Index done
+[MP4Header::parseStbl] 03:29:09-820 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:09-820 Indexed audio, nb blocks:2896 (final)
+[MP4Header::parseTrack] 03:29:09-820 Parsing Track
+[MP4Header::parseMdia] 03:29:09-820 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-820 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:09-820 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:09-820 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:09-820 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:09-820 stts:0
+[MP4Header::parseStbl] 03:29:09-820 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:09-820 Using myscale 48000
+[MP4Header::parseStbl] 03:29:09-820 0 frames /2897 nbsz..
+[MP4Header::parseStbl] 03:29:09-820 		nbCo: 52
+Cur audio track :2
+[MP4Header::indexify] 03:29:09-820 Build Track index
+[MP4Header::splitAudio] 03:29:09-820 No very large blocks found, 906698 bytes present over 2897 blocks
+[MP4Header::indexify] 03:29:09-820 Index done
+[MP4Header::parseStbl] 03:29:09-820 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:09-820 Indexed audio, nb blocks:2897 (final)
+[MP4Header::parseTrack] 03:29:09-820 Parsing Track
+[MP4Header::parseMdia] 03:29:09-820 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:09-820 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:09-820 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:09-820 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:09-820 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:09-820 stts:0
+[MP4Header::parseStbl] 03:29:09-820 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:09-820 Using myscale 48000
+[MP4Header::parseStbl] 03:29:09-820 0 frames /2901 nbsz..
+[MP4Header::parseStbl] 03:29:09-821 		nbCo: 52
+Cur audio track :3
+[MP4Header::indexify] 03:29:09-821 Build Track index
+[MP4Header::splitAudio] 03:29:09-821 No very large blocks found, 1510391 bytes present over 2901 blocks
+[MP4Header::indexify] 03:29:09-821 Index done
+[MP4Header::parseStbl] 03:29:09-821 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:09-821 Indexed audio, nb blocks:2901 (final)
+[MP4Header::lookupMainAtoms] 03:29:09-821 Done finding main atoms
+
+[MP4Header::adjustElstDelay] 03:29:09-821 Delay for track 0 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-821 Start offset for track 0 : raw = 0, scaled = 0 with scale = 12800
+[MP4Header::adjustElstDelay] 03:29:09-821 Delay for track 1 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-821 Start offset for track 1 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:09-821 Delay for track 2 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-821 Start offset for track 2 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:09-821 Delay for track 3 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-821 Start offset for track 3 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:09-821 Delay for track 4 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:09-821 Start offset for track 4 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:09-821 Elst minimum = 0 us
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:09-821 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:09-821 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:09-821 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:09-821 Estimating audio byterate...
+[MP4Header::open] 03:29:09-821 3gp/mov file successfully read..
+[MP4Header::refineFps] 03:29:09-821 MinDelta=40000 us
+[MP4Header::refineFps] 03:29:09-821 Computed fps1000=25000
+[MP4Header::refineFps] 03:29:09-821 Computed fps1000 matches the average one.
+[MP4Header::open] 03:29:09-821 Nb images       : 1548
+[MP4Header::open] 03:29:09-821 Movie duration  : 00:01:01,920
+[MP4Header::open] 03:29:09-821 Last video PTS  : 00:01:01,880
+[MP4Header::open] 03:29:09-821 Last video DTS  : 00:01:01,880
+[Editor]The video codec has some extradata (38 bytes)
+
+ 0000 : .d......gd...+@(   01 64 00 1f ff e1 00 17 67 64 00 1f ac 2b 40 28
+ 0010 : .......@....x...   02 dd 80 88 00 00 1f 40 00 06 1a 84 78 e1 95 01
+ 0020 : ..h.<.             00 04 68 ee 3c b0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:09-821 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-821  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-821  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-821 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:09-822 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-822 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-823 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-823 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:09-823 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-823  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-823  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-823 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-823 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:09-823 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[Editor] Decoder FCC: H264 (34363248)
+[ADM_getDecoder] 03:29:09-823 Searching decoder in plugins
+[tryCreatingVideoDecoder] 03:29:09-823 No decoder found in plugin
+[ADM_getDecoder] 03:29:09-823 Searching decoder in coreVideoCodec(1280 x 720, extradataSize:38)...
+[ADM_coreCodecGetDecoder] 03:29:09-823 Searching decoder in coreVideoCodec(1280 x 720, extradataSize:38)...
+[lavc] Build: 3810148
+[decoderFFH264::decoderFFH264] 03:29:09-823 [lavc] Initializing H264 decoder with 38 extradata
+[decoderFFH264::decoderFFH264] 03:29:09-823 [lavc] Decoder init: AV_CODEC_ID_H264 video decoder initialized! (H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10)
+[EditorCache::EditorCache] 03:29:09-823 Video cache created for 16 decoded images.
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-823 Original frame increment 00:00:00,040 = 40000 us
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-823 min increment 00:00:00,040 = 40000 us for frame 2
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-823 max increment 00:00:00,040 = 40000 us for frame 2
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-823 About 40000 microseconds per frame
+[ADM_EditorSegment::addReferenceVideo] 03:29:09-823 The first frame DTS = 0 ms
+[ADM_EditorSegment::updateStartTime] 03:29:09-823 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_verifyDts] 03:29:09-823 Verifying DTS....
+[ADM_verifyDts] 03:29:09-823 Checking from 1 to 1548
+[ADM_verifyDts] 03:29:09-824 Pass 2..
+[ADM_verifyDts] 03:29:09-824 DTS verified
+[Editor] B- frame possible with that codec 
+[ADM_Composer::addFile] 03:29:09-824 [Editor] This is H264, check if we can fill missing PTS
+[ADM_setH264MissingPts] 03:29:09-824 We have 0 missing PTS
+[ADM_Composer::addFile] 03:29:09-824 H264 sometimes has invalid timestamps which confuse avidemux, checking
+[ADM_Composer::seektoTime] 03:29:09-824 Seeking to a keyframe at 0 ms
+[ADM_Composer::seektoTime] 03:29:09-824 Seeking to frame 0 at 0 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:09-824 Decoding up to intra frame 0, ref: 1
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:09-824 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:09-824 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:09-824 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:09-834 Seek done, in reference, gone to 0 with segment start at 0
+[ADM_Composer::checkForValidPts] 03:29:09-834 Checking file for broken PTS...
+[ADM_Composer::checkForValidPts] 03:29:09-834 Checking 100 frames out of 1548.
+[dxvaRender::draw] 03:29:09-866 D3D : Draw!
+[dxvaRender::refresh] 03:29:09-866 Refresh**
+[ADM_Composer::seektoTime] 03:29:10-005 Seeking to a keyframe at 0 ms
+[ADM_Composer::seektoTime] 03:29:10-005 Seeking to frame 0 at 0 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:10-005 Decoding up to intra frame 0, ref: 1
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:10-005 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:10-005 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:10-005 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:10-017 Seek done, in reference, gone to 0 with segment start at 0
+[ADM_Composer::checkForValidPts] 03:29:10-022 -------- Stats :----------
+[ADM_Composer::checkForValidPts] 03:29:10-022 nbBFrames:0
+[ADM_Composer::checkForValidPts] 03:29:10-022 nbPFrames:97
+[ADM_Composer::checkForValidPts] 03:29:10-022 nbIFrames:3
+[ADM_Composer::checkForValidPts] 03:29:10-022 nbNoImage:0
+[ADM_Composer::checkForValidPts] 03:29:10-022 nbPtsgoingBack:0
+[ADM_Composer::checkForValidPts] 03:29:10-022 -------- /Stats ----------
+[ADM_Composer::seektoTime] 03:29:10-022 Seeking to a keyframe at 0 ms
+[ADM_Composer::seektoTime] 03:29:10-022 Seeking to frame 0 at 0 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:10-022 Decoding up to intra frame 0, ref: 1
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:10-022 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:10-022 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:10-022 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:10-032 Seek done, in reference, gone to 0 with segment start at 0
+[ADM_Composer::checkForDoubledFps] 03:29:10-032 Checking for doubled FPS.., time increment ceiling = 72000
+[ADM_Composer::checkForDoubledFps] 03:29:10-032 Checking DTS...
+[checkTiming] 03:29:10-032 	Good : 0
+[checkTiming] 03:29:10-032 	Bad  : 1547
+[ADM_Composer::checkForDoubledFps] 03:29:10-032 Checking PTS...
+[checkTiming] 03:29:10-032 	Good : 0
+[checkTiming] 03:29:10-032 	Bad  : 1547
+[ADM_Composer::checkForDoubledFps] 03:29:10-032 Cannot halve fps
+[ADM_Composer::setMarkerBPts] 03:29:10-032 Selection's end point set to 00:15:14,018 (914018000 us)
+[A_appendVideo] 03:29:10-032 Extending marker B to the end (00:15:14,018)
+[ADM_Composer::seektoTime] 03:29:10-032 Seeking to a keyframe at 80 ms
+[ADM_Composer::seektoTime] 03:29:10-032 Seeking to frame 0 at 80 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:10-032 Decoding up to intra frame 0, ref: 0
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:10-032 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:10-032 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:10-032 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:10-044 Seek done, in reference, gone to 80000 with segment start at 0
+[A_appendVideo] 03:29:10-051 Start is 00:00:00,080, marker A is 00:00:00,080
+[A_appendVideo] 03:29:10-051 End is 00:15:14,018, marker B is 00:15:14,018
+[ADM_Composer::addToUndoQueue] 03:29:10-051 The undo queue has now 2 element(s)
+[TS Demuxer] Probing...
+[checkMarker] 03:29:10-053 [Ts Demuxer] Sync ok :8 Sync ko :3442
+[checkMarker] 03:29:10-053 [Ts Demuxer] Sync ok :19 Sync ko :3431
+[detectTs] 03:29:10-053 [TS Demuxer] Not a TS file
+ [TS Demuxer] Not a ts file
+ [avsProxy] Cannot open that
+ [flvHeader] Cannot open that
+ [mkvHeader] Cannot open that
+Match ftyp
+ [MP4]MP4/MOV/3GP file detected...
+ [mxfHeader] Cannot open that (24000000)
+[probe] 03:29:10-053  [avsProxy] Cannot open that
+ [openDML] Cannot open that
+[probe] 03:29:10-053  [picHeader] Cannot open that
+[probe] 03:29:10-053 [asfHeader] Cannot open that
+ match :6 / 455 (probeSize:1048576)
+ [PS Demuxer] Not a ps file
+** opening 3gpp files **[MP4Header::lookupMainAtoms] 03:29:10-055 Analyzing file and atoms
+[MP4Header::parseMvhd] 03:29:10-055 Warning: movie scale is 1000
+[MP4Header::parseTrack] 03:29:10-055 Parsing Track
+[MP4Header::parseMdia] 03:29:10-055 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:10-055 hdlr video found 
+ [MP4Header::parseStbl] 03:29:10-055 <<Parsing Stbl>>
+[MP4Header::parseStbl] 03:29:10-055 [STSD] VIDEO avc1, size 132
+[STSD] vendor 
+[STSD] width :1280
+[STSD] height :720
+[STSD] datasize :0
+[STSD] FrameCount :1
+Codec string :0 <>
+LEFT:44
+Reading avcC, got avcC
+avcC size:38
+avcC Revision             :1
+avcC AVCProfileIndication :64
+avcC profile_compatibility:0
+avcC AVCLevelIndication   :1f
+avcC lengthSizeMinusOne   :ff
+avcC NumSeq               :e1
+avcC sequenceParSetLen    :17 
+ 0000 : gd...+@(.......@   67 64 00 1f ac 2b 40 28 02 dd 80 88 00 00 1f 40
+ 0010 : ....x..            00 06 1a 84 78 e1 95
+avcC numOfPictureParSets  :1
+avcC Pic len              :4
+
+ 0000 : .h.<               04 68 ee 3c
+[MP4Header::parseStbl] 03:29:10-055 stts:0
+[MP4Header::parseStbl] 03:29:10-055 Time stts atom found (1)
+[MP4Header::parseStbl] 03:29:10-055 Using myscale 12800
+[MP4Header::parseStbl] 03:29:10-055 Stss:41
+[MP4Header::parseStbl] 03:29:10-055 ctts:0
+[MP4Header::parseStbl] 03:29:10-055 0 frames /1208 nbsz..
+[MP4Header::parseStbl] 03:29:10-055 		nbCo: 41
+[MP4Header::indexify] 03:29:10-055 Build Track index
+[MP4Header::indexify] 03:29:10-055 Index done
+[MP4Header::parseStbl] 03:29:10-055 Movie duration = 48320
+[MP4Header::parseStbl] 03:29:10-055 # images = 1208
+[MP4Header::parseStbl] 03:29:10-055 Avg fps 25000.000000
+[MP4Header::parseTrack] 03:29:10-055 Parsing Track
+[MP4Header::parseMdia] 03:29:10-055 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:10-055 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:10-055 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:10-055 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:10-055 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:10-055 stts:0
+[MP4Header::parseStbl] 03:29:10-055 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:10-055 Using myscale 48000
+[MP4Header::parseStbl] 03:29:10-055 0 frames /2261 nbsz..
+[MP4Header::parseStbl] 03:29:10-056 		nbCo: 41
+Cur audio track :0
+[MP4Header::indexify] 03:29:10-056 Build Track index
+[MP4Header::splitAudio] 03:29:10-056 No very large blocks found, 1182985 bytes present over 2261 blocks
+[MP4Header::indexify] 03:29:10-056 Index done
+[MP4Header::parseStbl] 03:29:10-056 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:10-056 Indexed audio, nb blocks:2261 (final)
+[MP4Header::parseTrack] 03:29:10-056 Parsing Track
+[MP4Header::parseMdia] 03:29:10-056 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:10-056 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:10-056 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:10-056 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:10-056 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:10-056 stts:0
+[MP4Header::parseStbl] 03:29:10-056 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:10-056 Using myscale 48000
+[MP4Header::parseStbl] 03:29:10-056 0 frames /2261 nbsz..
+[MP4Header::parseStbl] 03:29:10-056 		nbCo: 41
+Cur audio track :1
+[MP4Header::indexify] 03:29:10-056 Build Track index
+[MP4Header::splitAudio] 03:29:10-056 No very large blocks found, 1183274 bytes present over 2261 blocks
+[MP4Header::indexify] 03:29:10-056 Index done
+[MP4Header::parseStbl] 03:29:10-056 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:10-056 Indexed audio, nb blocks:2261 (final)
+[MP4Header::parseTrack] 03:29:10-056 Parsing Track
+[MP4Header::parseMdia] 03:29:10-056 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:10-056 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:10-056 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:10-056 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:10-056 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:10-056 stts:0
+[MP4Header::parseStbl] 03:29:10-056 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:10-056 Using myscale 48000
+[MP4Header::parseStbl] 03:29:10-056 0 frames /2261 nbsz..
+[MP4Header::parseStbl] 03:29:10-057 		nbCo: 41
+Cur audio track :2
+[MP4Header::indexify] 03:29:10-057 Build Track index
+[MP4Header::splitAudio] 03:29:10-057 No very large blocks found, 707630 bytes present over 2261 blocks
+[MP4Header::indexify] 03:29:10-057 Index done
+[MP4Header::parseStbl] 03:29:10-057 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:10-057 Indexed audio, nb blocks:2261 (final)
+[MP4Header::parseTrack] 03:29:10-057 Parsing Track
+[MP4Header::parseMdia] 03:29:10-057 <<Parsing Mdia>>
+[HDLR]
+[MP4Header::parseMdia] 03:29:10-057 hdlr audio found 
+ [MP4Header::parseStbl] 03:29:10-057 <<Parsing Stbl>>
+[STSD] AUDIO <mp4a>, 0x6d703461, size 87
+[STSD]Revision       :0
+[STSD]Vendor         : 
+[STSD]Channels       :2
+[STSD]Bit per sample :16
+[STSD]Encoding       :0
+[STSD]Packet size    :0
+[STSD]Fq:48000
+[STSD]Fq       :48000
+Bytes left : 51
+[STSD] chan:2 bpp:16 encoding:0 fq:48000 (left 51)
+> got esds atom
+[MP4]Esds atom found
+	 Tag : 3 Len : 34
+	 ES_Desc
+	 Tag : 4 Len : 20
+	DecConfigDesc : Tag 64
+	 Tag : 5 Len : 2
+	 DecSpecicInfo
+Esds for audio
+[MP4Header::decodeEsds] 03:29:10-057 2 bytes of audio extradata successfully read from file.
+[MP4Header::refineAudio] 03:29:10-057 Audio track is AAC, checking it...
+[MP4Header::parseStbl] 03:29:10-057 stts:0
+[MP4Header::parseStbl] 03:29:10-057 Time stts atom found (2)
+[MP4Header::parseStbl] 03:29:10-057 Using myscale 48000
+[MP4Header::parseStbl] 03:29:10-057 0 frames /2261 nbsz..
+[MP4Header::parseStbl] 03:29:10-057 		nbCo: 41
+Cur audio track :3
+[MP4Header::indexify] 03:29:10-057 Build Track index
+[MP4Header::splitAudio] 03:29:10-057 No very large blocks found, 1182996 bytes present over 2261 blocks
+[MP4Header::indexify] 03:29:10-057 Index done
+[MP4Header::parseStbl] 03:29:10-057 Indexed audio, nb blocks:0
+[MP4Header::parseStbl] 03:29:10-057 Indexed audio, nb blocks:2261 (final)
+[MP4Header::lookupMainAtoms] 03:29:10-057 Done finding main atoms
+
+[MP4Header::adjustElstDelay] 03:29:10-057 Delay for track 0 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:10-057 Start offset for track 0 : raw = 0, scaled = 0 with scale = 12800
+[MP4Header::adjustElstDelay] 03:29:10-057 Delay for track 1 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:10-057 Start offset for track 1 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:10-057 Delay for track 2 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:10-057 Start offset for track 2 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:10-057 Delay for track 3 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:10-057 Start offset for track 3 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:10-057 Delay for track 4 : raw = 0, scaled  = 0 with scale = 1000
+[MP4Header::adjustElstDelay] 03:29:10-057 Start offset for track 4 : raw = 0, scaled = 0 with scale = 48000
+[MP4Header::adjustElstDelay] 03:29:10-057 Elst minimum = 0 us
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:10-057 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:10-057 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:10-057 Estimating audio byterate...
+0x1190 word, Channel : 2, fqIndex=3
+[ADM_mp4AudioAccess::ADM_mp4AudioAccess] 03:29:10-057 Estimating audio byterate...
+[MP4Header::open] 03:29:10-057 3gp/mov file successfully read..
+[MP4Header::refineFps] 03:29:10-057 MinDelta=40000 us
+[MP4Header::refineFps] 03:29:10-057 Computed fps1000=25000
+[MP4Header::refineFps] 03:29:10-057 Computed fps1000 matches the average one.
+[MP4Header::open] 03:29:10-057 Nb images       : 1208
+[MP4Header::open] 03:29:10-057 Movie duration  : 00:00:48,320
+[MP4Header::open] 03:29:10-057 Last video PTS  : 00:00:48,280
+[MP4Header::open] 03:29:10-057 Last video DTS  : 00:00:48,280
+[Editor]The video codec has some extradata (38 bytes)
+
+ 0000 : .d......gd...+@(   01 64 00 1f ff e1 00 17 67 64 00 1f ac 2b 40 28
+ 0010 : .......@....x...   02 dd 80 88 00 00 1f 40 00 06 1a 84 78 e1 95 01
+ 0020 : ..h.<.             00 04 68 ee 3c b0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:10-057 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-057  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-057  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-057 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:10-058 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-058 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-059 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-059 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_a52.dll score 0
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ima_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_lav.dll score 150
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_Mad.dll score 0
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ms_adpcm.dll score 0
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrnb.dll score 0
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opencore_amrwb.dll score 0
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_opus.dll score 0
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_ulaw.dll score 0
+[ADM_ad_searchCodec] 03:29:10-059 [ADM_ad_plugin]Format 0xff : probing libADM_ad_vorbis.dll score 0
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-059  [ADM_AD_LAV] Using decoder for type 0xff
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-059  [ADM_AD_LAV] #of channels 2
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-059 [ADM_AD_LAV] Using 2 bytes of extra header data, 2 channels
+
+ 0000 : ..                 11 90
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-059 Decoder created using float planar...
+[ADM_AudiocoderLavcodec::ADM_AudiocoderLavcodec] 03:29:10-059 [ADM_ad_lav] init successful (blockalign 1), channels=2
+[Editor] Decoder FCC: H264 (34363248)
+[ADM_getDecoder] 03:29:10-059 Searching decoder in plugins
+[tryCreatingVideoDecoder] 03:29:10-059 No decoder found in plugin
+[ADM_getDecoder] 03:29:10-059 Searching decoder in coreVideoCodec(1280 x 720, extradataSize:38)...
+[ADM_coreCodecGetDecoder] 03:29:10-059 Searching decoder in coreVideoCodec(1280 x 720, extradataSize:38)...
+[lavc] Build: 3810148
+[decoderFFH264::decoderFFH264] 03:29:10-059 [lavc] Initializing H264 decoder with 38 extradata
+[decoderFFH264::decoderFFH264] 03:29:10-059 [lavc] Decoder init: AV_CODEC_ID_H264 video decoder initialized! (H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10)
+[EditorCache::EditorCache] 03:29:10-059 Video cache created for 16 decoded images.
+[ADM_EditorSegment::addReferenceVideo] 03:29:10-059 Original frame increment 00:00:00,040 = 40000 us
+[ADM_EditorSegment::addReferenceVideo] 03:29:10-060 min increment 00:00:00,040 = 40000 us for frame 2
+[ADM_EditorSegment::addReferenceVideo] 03:29:10-060 max increment 00:00:00,040 = 40000 us for frame 2
+[ADM_EditorSegment::addReferenceVideo] 03:29:10-060 About 40000 microseconds per frame
+[ADM_EditorSegment::addReferenceVideo] 03:29:10-060 The first frame DTS = 0 ms
+[ADM_EditorSegment::updateStartTime] 03:29:10-060 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_verifyDts] 03:29:10-060 Verifying DTS....
+[ADM_verifyDts] 03:29:10-060 Checking from 1 to 1208
+[ADM_verifyDts] 03:29:10-060 Pass 2..
+[ADM_verifyDts] 03:29:10-060 DTS verified
+[Editor] B- frame possible with that codec 
+[ADM_Composer::addFile] 03:29:10-060 [Editor] This is H264, check if we can fill missing PTS
+[ADM_setH264MissingPts] 03:29:10-060 We have 0 missing PTS
+[ADM_Composer::addFile] 03:29:10-060 H264 sometimes has invalid timestamps which confuse avidemux, checking
+[ADM_Composer::seektoTime] 03:29:10-060 Seeking to a keyframe at 0 ms
+[ADM_Composer::seektoTime] 03:29:10-060 Seeking to frame 0 at 0 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:10-060 Decoding up to intra frame 0, ref: 2
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:10-060 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:10-060 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:10-060 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:10-073 Seek done, in reference, gone to 0 with segment start at 0
+[ADM_Composer::checkForValidPts] 03:29:10-073 Checking file for broken PTS...
+[ADM_Composer::checkForValidPts] 03:29:10-073 Checking 100 frames out of 1208.
+[dxvaRender::draw] 03:29:10-116 D3D : Draw!
+[dxvaRender::refresh] 03:29:10-116 Refresh**
+[ADM_Composer::seektoTime] 03:29:10-290 Seeking to a keyframe at 0 ms
+[ADM_Composer::seektoTime] 03:29:10-290 Seeking to frame 0 at 0 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:10-290 Decoding up to intra frame 0, ref: 2
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:10-290 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:10-290 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:10-290 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:10-302 Seek done, in reference, gone to 0 with segment start at 0
+[ADM_Composer::checkForValidPts] 03:29:10-305 -------- Stats :----------
+[ADM_Composer::checkForValidPts] 03:29:10-305 nbBFrames:0
+[ADM_Composer::checkForValidPts] 03:29:10-305 nbPFrames:97
+[ADM_Composer::checkForValidPts] 03:29:10-305 nbIFrames:3
+[ADM_Composer::checkForValidPts] 03:29:10-305 nbNoImage:0
+[ADM_Composer::checkForValidPts] 03:29:10-305 nbPtsgoingBack:0
+[ADM_Composer::checkForValidPts] 03:29:10-305 -------- /Stats ----------
+[ADM_Composer::seektoTime] 03:29:10-305 Seeking to a keyframe at 0 ms
+[ADM_Composer::seektoTime] 03:29:10-306 Seeking to frame 0 at 0 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:10-306 Decoding up to intra frame 0, ref: 2
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:10-306 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:10-306 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:10-306 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:10-317 Seek done, in reference, gone to 0 with segment start at 0
+[ADM_Composer::checkForDoubledFps] 03:29:10-317 Checking for doubled FPS.., time increment ceiling = 72000
+[ADM_Composer::checkForDoubledFps] 03:29:10-318 Checking DTS...
+[checkTiming] 03:29:10-318 	Good : 0
+[checkTiming] 03:29:10-318 	Bad  : 1207
+[ADM_Composer::checkForDoubledFps] 03:29:10-318 Checking PTS...
+[checkTiming] 03:29:10-318 	Good : 0
+[checkTiming] 03:29:10-318 	Bad  : 1207
+[ADM_Composer::checkForDoubledFps] 03:29:10-318 Cannot halve fps
+[ADM_Composer::setMarkerBPts] 03:29:10-318 Selection's end point set to 00:16:02,338 (962338000 us)
+[A_appendVideo] 03:29:10-318 Extending marker B to the end (00:16:02,338)
+[ADM_Composer::seektoTime] 03:29:10-318 Seeking to a keyframe at 80 ms
+[ADM_Composer::seektoTime] 03:29:10-318 Seeking to frame 0 at 80 ms
+[ADM_Composer::DecodePictureUpToIntra] 03:29:10-318 Decoding up to intra frame 0, ref: 0
+[edCache] Flush
+[ADM_hwAccelEntryDxva2::canSupportThis] 03:29:10-318 DXVA2 not enabled
+[ADM_hwAccelManager::lookup] 03:29:10-318 No Matching Hw accel
+[ADM_FFgetFormat] 03:29:10-318 No Hw Accel for that
+[ADM_Composer::goToTimeVideo] 03:29:10-330 Seek done, in reference, gone to 80000 with segment start at 0
+[ADM_EditorSegment::deleteSegments] 03:29:10-336 Clearing a new segment
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-336 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-336 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-337 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-337 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-337 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-337 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-337 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-337 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-337 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-337 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-337 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-337 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-337 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-337 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-338 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-338 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-338 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-338 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-338 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-338 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-339 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-339 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-339 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-339 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-339 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-339 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-340 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-340 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-340 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-340 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-341 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-341 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-341 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-341 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[ADM_EditorSegment::addSegment] 03:29:10-341 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-341 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+
+[ADM_EditorSegment::addSegment] 03:29:10-342 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-342 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ADM_EditorSegment::addSegment] 03:29:10-342 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-342 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-343 We reached frame 6889 with a PTS of 275 651 015 when looking for PTS 275 640 000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-343 Cannot get frame with pts=275640 ms
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ADM_EditorSegment::addSegment] 03:29:10-343 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-343 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-344 We reached frame 6889 with a PTS of 275 651 015 when looking for PTS 275 640 000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-344 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-344 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-344 Cannot get frame with pts=299200 ms
+
+
+[ADM_EditorSegment::addSegment] 03:29:10-344 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-344 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-344 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-344 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-345 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-345 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-345 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-345 Cannot get frame with pts=304240 ms
+[ADM_EditorSegment::addSegment] 03:29:10-345 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-345 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-345 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-345 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-345 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-346 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-346 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-346 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-346 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-346 Cannot get frame with pts=328120 ms
+[ADM_EditorSegment::addSegment] 03:29:10-346 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-346 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-346 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-346 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-346 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-347 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-347 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-347 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-347 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-347 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-347 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-347 Cannot get frame with pts=349880 ms
+[ADM_EditorSegment::addSegment] 03:29:10-347 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-347 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-348 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-348 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-348 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-348 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-348 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-348 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-348 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-348 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-348 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-348 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-348 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-348 Cannot get frame with pts=406280 ms
+[ADM_EditorSegment::addSegment] 03:29:10-348 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-348 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-349 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-349 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-349 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-349 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-349 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-349 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-349 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-349 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-349 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-349 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-350 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-350 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-350 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-350 Cannot get frame with pts=421880 ms
+[ADM_EditorSegment::addSegment] 03:29:10-350 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-350 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-350 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-350 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-350 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-351 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-351 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-351 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-351 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-351 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-351 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-351 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-351 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-351 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-351 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-351 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-351 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-351 Cannot get frame with pts=446680 ms
+[ADM_EditorSegment::addSegment] 03:29:10-351 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-351 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-352 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-352 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-352 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-352 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-352 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-352 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-352 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-352 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-352 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-353 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-353 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-353 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-353 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-353 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-353 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-353 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-353 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-353 Cannot get frame with pts=460080 ms
+[ADM_EditorSegment::addSegment] 03:29:10-353 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-353 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-354 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-354 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-354 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-354 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-354 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-354 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-354 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-354 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-354 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-354 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-354 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-354 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-354 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-355 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-355 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-355 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-355 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-355 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-355 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-355 Cannot get frame with pts=464000 ms
+[ADM_EditorSegment::addSegment] 03:29:10-355 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-355 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-356 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-356 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-356 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-356 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-356 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-356 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-356 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-356 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-356 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-356 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-356 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-356 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-356 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-356 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-357 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-357 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-357 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-357 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-357 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-357 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-357 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-357 Cannot get frame with pts=506000 ms
+[ADM_EditorSegment::addSegment] 03:29:10-357 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-357 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-358 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-358 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-358 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-358 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-358 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-358 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-358 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-358 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-358 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-358 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-358 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-358 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-358 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-358 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-359 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-359 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-359 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-359 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-359 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-359 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-359 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-359 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-359 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-359 Cannot get frame with pts=511480 ms
+[ADM_EditorSegment::addSegment] 03:29:10-359 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-359 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-360 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-360 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-360 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-360 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-360 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-360 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-360 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-360 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-360 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-360 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-360 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-361 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-361 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-361 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-361 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-361 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-361 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-361 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-361 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-361 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-361 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-361 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-361 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-361 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-361 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-361 Cannot get frame with pts=534560 ms
+[ADM_EditorSegment::addSegment] 03:29:10-361 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-361 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-362 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-362 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-362 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-362 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-362 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-362 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-362 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-363 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-363 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-363 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-363 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-363 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-363 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-363 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-363 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-363 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-363 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-363 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-363 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-363 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-364 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-364 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-364 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-364 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-364 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-364 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-364 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-364 Cannot get frame with pts=563400 ms
+[ADM_EditorSegment::addSegment] 03:29:10-364 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-364 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-365 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-365 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-365 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-365 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-365 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-365 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-365 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-365 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-365 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-365 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-365 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-365 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-365 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-366 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-366 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-366 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-366 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-366 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-366 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-366 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-366 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-366 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-366 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-366 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-366 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-366 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-366 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-366 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-367 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-367 Cannot get frame with pts=649560 ms
+[ADM_EditorSegment::addSegment] 03:29:10-367 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-367 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-367 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-367 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-367 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-367 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-367 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-368 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-368 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-368 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-368 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-368 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-368 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-368 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-368 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-368 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-368 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-368 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-368 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-368 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-369 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-369 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-369 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-369 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-369 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-369 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-369 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-369 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-369 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-369 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-369 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-369 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-369 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-369 Cannot get frame with pts=777480 ms
+[ADM_EditorSegment::addSegment] 03:29:10-369 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-369 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-370 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-370 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-370 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-370 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-370 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-370 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-370 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-371 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-371 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-371 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-371 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-371 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-371 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-371 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-371 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-371 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-371 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-371 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-371 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-372 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-372 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-372 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-372 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-372 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-372 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-372 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-372 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-372 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-372 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-372 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-372 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-372 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-373 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-373 Cannot get frame with pts=784480 ms
+[ADM_EditorSegment::addSegment] 03:29:10-373 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-373 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-373 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-373 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-373 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-373 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-373 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-374 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-374 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-374 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-374 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-374 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-374 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-374 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-374 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-374 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-374 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-374 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-374 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-374 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-374 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-375 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-375 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-375 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-375 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-375 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-375 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-375 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-375 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-375 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-375 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-375 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-375 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-375 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-376 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-376 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-376 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-376 Cannot get frame with pts=797400 ms
+[ADM_EditorSegment::addSegment] 03:29:10-376 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-376 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-376 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-376 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-377 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-377 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-377 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-377 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-377 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-377 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-377 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-377 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-377 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-377 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-377 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-377 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-377 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-378 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-378 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-378 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-378 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-378 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-378 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-378 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-378 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-378 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-378 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-378 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-378 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-378 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-379 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-379 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-379 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-379 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-379 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-379 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-379 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-379 Cannot get frame with pts=797400 ms
+[TimeToFrame] 03:29:10-379 We reached frame 20570 with a PTS of 823337968 when looking for PTS 823320000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-379 Cannot get frame with pts=823320 ms
+[ADM_EditorSegment::addSegment] 03:29:10-379 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-379 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-380 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-380 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-380 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-380 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-380 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-380 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-380 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-380 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-380 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-381 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-381 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-381 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-381 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-381 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-381 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-381 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-381 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-381 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-381 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-381 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-381 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-381 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-382 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-382 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-382 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-382 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-382 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-382 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-382 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-382 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-382 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-382 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-382 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-382 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-383 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-383 Cannot get frame with pts=797400 ms
+[TimeToFrame] 03:29:10-383 We reached frame 20570 with a PTS of 823337968 when looking for PTS 823320000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-383 Cannot get frame with pts=823320 ms
+[TimeToFrame] 03:29:10-383 We reached frame 20584 with a PTS of 823897968 when looking for PTS 823880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-383 Cannot get frame with pts=823880 ms
+[ADM_EditorSegment::addSegment] 03:29:10-383 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-383 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-383 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-384 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-384 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-384 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-384 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-384 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-384 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-384 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-384 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-384 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-384 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-384 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-384 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-385 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-385 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-385 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-385 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-385 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-385 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-385 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-385 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-385 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-385 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-385 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-385 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-385 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-386 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-386 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-386 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-386 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-386 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-386 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-386 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-386 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-386 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-386 Cannot get frame with pts=797400 ms
+[TimeToFrame] 03:29:10-386 We reached frame 20570 with a PTS of 823337968 when looking for PTS 823320000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-386 Cannot get frame with pts=823320 ms
+[TimeToFrame] 03:29:10-386 We reached frame 20584 with a PTS of 823897968 when looking for PTS 823880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-386 Cannot get frame with pts=823880 ms
+[TimeToFrame] 03:29:10-387 We reached frame 20849 with a PTS of 834497968 when looking for PTS 834480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-387 Cannot get frame with pts=834480 ms
+[ADM_EditorSegment::addSegment] 03:29:10-387 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-387 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-387 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-387 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-387 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-388 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-388 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-388 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-388 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-388 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-388 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-388 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-388 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-388 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-388 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-388 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-388 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-388 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-388 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-389 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-389 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-389 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-389 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-389 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-389 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-389 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-389 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-389 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-389 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-389 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-389 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-389 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-390 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-390 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-390 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-390 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-390 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-390 Cannot get frame with pts=797400 ms
+[TimeToFrame] 03:29:10-390 We reached frame 20570 with a PTS of 823337968 when looking for PTS 823320000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-390 Cannot get frame with pts=823320 ms
+[TimeToFrame] 03:29:10-390 We reached frame 20584 with a PTS of 823897968 when looking for PTS 823880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-390 Cannot get frame with pts=823880 ms
+[TimeToFrame] 03:29:10-390 We reached frame 20849 with a PTS of 834497968 when looking for PTS 834480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-390 Cannot get frame with pts=834480 ms
+[TimeToFrame] 03:29:10-391 We reached frame 21042 with a PTS of 842217968 when looking for PTS 842200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-391 Cannot get frame with pts=842200 ms
+[ADM_EditorSegment::addSegment] 03:29:10-391 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-391 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-391 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-391 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-391 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-391 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-391 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-392 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-392 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-392 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-392 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-392 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-392 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-392 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-392 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-392 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-392 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-392 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-392 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-392 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-393 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-393 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-393 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-393 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-393 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-393 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-393 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-393 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-393 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-393 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-393 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-393 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-394 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-394 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-394 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-394 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-394 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-394 Cannot get frame with pts=797400 ms
+[TimeToFrame] 03:29:10-394 We reached frame 20570 with a PTS of 823337968 when looking for PTS 823320000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-394 Cannot get frame with pts=823320 ms
+[TimeToFrame] 03:29:10-394 We reached frame 20584 with a PTS of 823897968 when looking for PTS 823880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-394 Cannot get frame with pts=823880 ms
+[TimeToFrame] 03:29:10-394 We reached frame 20849 with a PTS of 834497968 when looking for PTS 834480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-394 Cannot get frame with pts=834480 ms
+[TimeToFrame] 03:29:10-394 We reached frame 21042 with a PTS of 842217968 when looking for PTS 842200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-394 Cannot get frame with pts=842200 ms
+[ADM_EditorSegment::addSegment] 03:29:10-394 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-394 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-395 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-395 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-395 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-395 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-395 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-395 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-396 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-396 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-396 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-396 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-396 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-396 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-396 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-396 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-396 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-396 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-396 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-396 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-396 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-397 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-397 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-397 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-397 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-397 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-397 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-397 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-397 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-397 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-397 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-397 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-397 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-397 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-398 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-398 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-398 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-398 Cannot get frame with pts=797400 ms
+[TimeToFrame] 03:29:10-398 We reached frame 20570 with a PTS of 823337968 when looking for PTS 823320000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-398 Cannot get frame with pts=823320 ms
+[TimeToFrame] 03:29:10-398 We reached frame 20584 with a PTS of 823897968 when looking for PTS 823880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-398 Cannot get frame with pts=823880 ms
+[TimeToFrame] 03:29:10-398 We reached frame 20849 with a PTS of 834497968 when looking for PTS 834480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-398 Cannot get frame with pts=834480 ms
+[TimeToFrame] 03:29:10-398 We reached frame 21042 with a PTS of 842217968 when looking for PTS 842200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-398 Cannot get frame with pts=842200 ms
+[ADM_EditorSegment::addSegment] 03:29:10-398 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-398 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-399 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-399 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-399 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-399 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-399 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-399 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-399 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-400 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-400 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-400 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-400 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-400 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-400 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-400 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-400 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-400 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-400 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-400 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-400 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-400 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-401 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-401 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-401 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-401 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-401 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-401 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-401 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-401 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-401 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-401 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-401 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-401 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-401 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-401 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-402 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-402 Cannot get frame with pts=797400 ms
+[TimeToFrame] 03:29:10-402 We reached frame 20570 with a PTS of 823337968 when looking for PTS 823320000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-402 Cannot get frame with pts=823320 ms
+[TimeToFrame] 03:29:10-402 We reached frame 20584 with a PTS of 823897968 when looking for PTS 823880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-402 Cannot get frame with pts=823880 ms
+[TimeToFrame] 03:29:10-402 We reached frame 20849 with a PTS of 834497968 when looking for PTS 834480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-402 Cannot get frame with pts=834480 ms
+[TimeToFrame] 03:29:10-402 We reached frame 21042 with a PTS of 842217968 when looking for PTS 842200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-402 Cannot get frame with pts=842200 ms
+[ADM_EditorSegment::addSegment] 03:29:10-402 Adding a new segment
+[ADM_EditorSegment::updateStartTime] 03:29:10-402 Using pts2=00:00:00,080 to get dts, as this video does not start at zero
+[TimeToFrame] 03:29:10-403 We reached frame 6889 with a PTS of 275651015 when looking for PTS 275640000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-403 Cannot get frame with pts=275640 ms
+[TimeToFrame] 03:29:10-403 We reached frame 7478 with a PTS of 299211015 when looking for PTS 299200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-403 Cannot get frame with pts=299200 ms
+[TimeToFrame] 03:29:10-403 We reached frame 7604 with a PTS of 304251015 when looking for PTS 304240000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-403 Cannot get frame with pts=304240 ms
+[TimeToFrame] 03:29:10-403 We reached frame 8201 with a PTS of 328131015 when looking for PTS 328120000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-403 Cannot get frame with pts=328120 ms
+[TimeToFrame] 03:29:10-403 We reached frame 8745 with a PTS of 349891015 when looking for PTS 349880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-404 Cannot get frame with pts=349880 ms
+[TimeToFrame] 03:29:10-404 We reached frame 10152 with a PTS of 406282031 when looking for PTS 406280000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-404 Cannot get frame with pts=406280 ms
+[TimeToFrame] 03:29:10-404 We reached frame 10542 with a PTS of 421882031 when looking for PTS 421880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-404 Cannot get frame with pts=421880 ms
+[TimeToFrame] 03:29:10-404 We reached frame 11162 with a PTS of 446682031 when looking for PTS 446680000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-404 Cannot get frame with pts=446680 ms
+[TimeToFrame] 03:29:10-404 We reached frame 11497 with a PTS of 460082031 when looking for PTS 460080000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-404 Cannot get frame with pts=460080 ms
+[TimeToFrame] 03:29:10-404 We reached frame 11595 with a PTS of 464002031 when looking for PTS 464000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-404 Cannot get frame with pts=464000 ms
+[TimeToFrame] 03:29:10-404 We reached frame 12640 with a PTS of 506011015 when looking for PTS 506000000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-404 Cannot get frame with pts=506000 ms
+[TimeToFrame] 03:29:10-405 We reached frame 12777 with a PTS of 511491015 when looking for PTS 511480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-405 Cannot get frame with pts=511480 ms
+[TimeToFrame] 03:29:10-406 We reached frame 13354 with a PTS of 534571015 when looking for PTS 534560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-406 Cannot get frame with pts=534560 ms
+[TimeToFrame] 03:29:10-406 We reached frame 14075 with a PTS of 563411015 when looking for PTS 563400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-406 Cannot get frame with pts=563400 ms
+[TimeToFrame] 03:29:10-406 We reached frame 16226 with a PTS of 649577968 when looking for PTS 649560000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-406 Cannot get frame with pts=649560 ms
+[TimeToFrame] 03:29:10-407 We reached frame 19424 with a PTS of 777497968 when looking for PTS 777480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-407 Cannot get frame with pts=777480 ms
+[TimeToFrame] 03:29:10-407 We reached frame 19599 with a PTS of 784497968 when looking for PTS 784480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-407 Cannot get frame with pts=784480 ms
+[TimeToFrame] 03:29:10-407 We reached frame 19922 with a PTS of 797417968 when looking for PTS 797400000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-407 Cannot get frame with pts=797400 ms
+[TimeToFrame] 03:29:10-407 We reached frame 20570 with a PTS of 823337968 when looking for PTS 823320000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-407 Cannot get frame with pts=823320 ms
+[TimeToFrame] 03:29:10-407 We reached frame 20584 with a PTS of 823897968 when looking for PTS 823880000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-407 Cannot get frame with pts=823880 ms
+[TimeToFrame] 03:29:10-407 We reached frame 20849 with a PTS of 834497968 when looking for PTS 834480000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-407 Cannot get frame with pts=834480 ms
+[TimeToFrame] 03:29:10-407 We reached frame 21042 with a PTS of 842217968 when looking for PTS 842200000
+[ADM_EditorSegment::dtsFromPts] 03:29:10-407 Cannot get frame with pts=842200 ms
+[ADM_Composer::setMarkerBPts] 03:29:10-407 Selection's end point set to 00:07:29,440 (449440000 us)
+[ADM_PP::cleanup] 03:29:10-407 Deleting post proc
+[ADM_PP::update] 03:29:10-408 updating post proc
+[ADM_PP::update] 03:29:10-409 Enabled type:3 strength:3
+[videoEncoder6_SetCurrentEncoder] 03:29:10-409 Copy selected
+[ADM_Composer::addAudioTrack] 03:29:10-409 ** Adding active track from pool **
+[ADM_Composer::addAudioTrack] 03:29:10-409 Adding track 0
+[ActiveAudioTracks::dump] 03:29:10-409  Active Track 0, pool index=0
+[ActiveAudioTracks::dump] 03:29:10-409 	 from video
+[audioCodecSetByName] 03:29:10-409 Setting copy audio codec for track 0
+[audioCodecSetByName] 03:29:10-409 Audio codec copy set for track 0 (index=0)
+[AudioEncoder] Cannot set conf on copy! (track 0)
+[ADM_Composer::setAudioCodec] 03:29:10-409 Cannot set configuration for codec copy, track 0
+[ADM_Composer::setContainer] 03:29:10-409 setting container as index 3
+[Script] Tinypy INFO - Done
+
+
+[ADM_QSlider] Marker B is out of bounds (962338000, 430440000)
+
+
+[dxvaRender::draw] 03:29:10-421 D3D : Draw!
+[dxvaRender::refresh] 03:29:10-421 Refresh**
+[HandleAction] 03:29:19-736 ************ OPEN_APP_LOG **************

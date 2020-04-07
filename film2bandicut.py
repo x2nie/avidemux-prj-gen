@@ -11,17 +11,17 @@ FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-6-APRIL\report-4d-
 # FILM_PRJ = r'WSVEFolder\Project\project.xml'
 
 FILM_PRJ = os.path.abspath(FILM_PRJ) 
-FILM_PY = os.path.splitext(FILM_PRJ)[0] + '.py'
-FILM_MP4 = os.path.splitext(FILM_PRJ)[0] + '.mp4'
+FILM_BCPF = os.path.splitext(FILM_PRJ)[0] + '.bcpf'
+# FILM_MP4 = os.path.splitext(FILM_PRJ)[0] + '.mp4'
 
 print(locals())
 
 LOADED_VIDEO = []
 LINES = [ # to be file.py lines
-         '#PY  <- Needed to identify #',
-         '#--automatically built--',
-         '',
-         'adm = Avidemux()',
+'''<?xml version="1.0" encoding="utf-16"?>
+<BandicutProjectFile>
+<Setting Type="Cut" Join="Yes" />
+''''
 ]
 META = [] # array of dict per segment
 
@@ -119,7 +119,7 @@ def fixInt(s):
 LINES.append('adm.clearSegments()')
 duration = 0
 total = 0
-for m in META:
+for i, m in enumerate(META):
     source = m['source']
     src_idx= LOADED_VIDEO.index(source)
     level  = m['level']
@@ -130,7 +130,12 @@ for m in META:
     trim0  = fixInt(time['time.trim.start'])
     duration = posz - pos0
     total += duration
-    LINES.append('%sadm.addSegment(%s, %s, %s)' % (enable, src_idx, trim0, duration))
+    LINES.append(
+'''	<VideoItem	Index="%s"	Crc="0"	VideoIndex="0"	AudioIndex="0"
+		Start="232960000"		End="234920000"
+		Title="Notitle"
+		File="C:/Users/citra/Videos/Logitech/LogiCapture/FINAL-6-APRIL/db-4d--02--2020-04-06_15-56-22.mp4" />
+'''  % (i, src_idx, trim0, duration))
 
 LINES += [    
 'adm.markerA = 0',
@@ -146,7 +151,7 @@ LINES += [
 'adm.setContainer("MP4", "muxerType=0", "optimize=1", "forceAspectRatio=False", "aspectRatio=1", "rotation=0")',
 ]
 
-with open(FILM_PY, 'w') as f:
+with open(FILM_BCPF, 'w') as f:
     f.write('\n'.join(LINES))
     
 # for l in LINES:
@@ -156,7 +161,7 @@ with open(FILM_PY, 'w') as f:
 # cmd = [
 #     r'"D:\Program Files\Avidemux 2.7 VC++ 64bits\avidemux.exe"',
 #     # https://www.avidemux.org/admWiki/doku.php?id=using:command_line_usage
-#     '--run', FILM_PY,
+#     '--run', FILM_BCPF,
 #     '--output-format', 'MP4'
 # ]
 # # subprocess.run(cmd)

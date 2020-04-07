@@ -1,5 +1,5 @@
 import os
-
+from datetime import timedelta
 from lxml import etree
 
 # FILM_PRJ = 'intro.wfp'
@@ -11,18 +11,12 @@ FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-6-APRIL\report-4d-
 # FILM_PRJ = r'WSVEFolder\Project\project.xml'
 
 FILM_PRJ = os.path.abspath(FILM_PRJ) 
-FILM_PY = os.path.splitext(FILM_PRJ)[0] + '.py'
-FILM_MP4 = os.path.splitext(FILM_PRJ)[0] + '.mp4'
+# FILM_BCPF = os.path.splitext(FILM_PRJ)[0] + '.bcpf'
+FILM_MP4 = os.path.splitext(FILM_PRJ)[0] + '-py.mp4'
 
 print(locals())
 
 LOADED_VIDEO = []
-LINES = [ # to be file.py lines
-         '#PY  <- Needed to identify #',
-         '#--automatically built--',
-         '',
-         'adm = Avidemux()',
-]
 META = [] # array of dict per segment
 
 
@@ -94,70 +88,57 @@ for x in root.findall(".//TimeLine"):
     META.append(dict(source=source, enable=enable, level=level, time=time))
     print()
         
+from moviepy.editor import *
 # ALL VIDEOS FIRST================================
 LOADED_VIDEO =[] #reset
+MP4s = {}
 for m in META:
     source =  m['source']
     if not source in LOADED_VIDEO:        
-        if len(LOADED_VIDEO) == 0:
-            LINES.append('adm.loadVideo("%s")' % source)
-        else:
-            LINES.append('adm.appendVideo("%s")' % source)
         LOADED_VIDEO.append(source)
+        MP4s[source] = VideoFileClip(source) # load from file
 
 # <Property key="time.trim.start" type="NLERational" value="[1674, 25]: 66.9600000 "/>
-def fixInt(s):
+def sfloat2timedelta(s):
     '66.9600000 to 66 960 000' #[1674, 25]: 66.9600000
     # <Property key="time.trim.start" type="NLERational" value="[1674, 25]: 66.9600000 "/>
     (dec,fric) = s.strip().split('.')
-    fric = fric[:6]
-    fric = fric.ljust(6,'0')
+    fric = fric[:3]
+    # fric = fric.ljust(3,'0')
     # print( fric )
-    return int(dec+fric)
+    return timedelta(seconds=int(dec), microseconds=int(fric))
+
 
 # ALL SEGMENT THEN================================
-LINES.append('adm.clearSegments()')
+# LINES.append('adm.clearSegments()')
+VIDEOS = []
 duration = 0
-total = 0
-for m in META:
+total = timedelta(seconds=0)
+for i, m in enumerate(META):
     source = m['source']
     src_idx= LOADED_VIDEO.index(source)
     level  = m['level']
     enable = '' if m['enable'] == '1' else '# '
     time   = m['time']
-    pos0   = fixInt(time['time.position.start'])
-    posz   = fixInt(time['time.position.end'])
-    trim0  = fixInt(time['time.trim.start'])
+    pos0   = sfloat2timedelta(time['time.position.start'])
+    posz   = sfloat2timedelta(time['time.position.end'])
+    trim0  = sfloat2timedelta(time['time.trim.start'])
     duration = posz - pos0
     total += duration
-    LINES.append('%sadm.addSegment(%s, %s, %s)' % (enable, src_idx, trim0, duration))
-
-LINES += [    
-'adm.markerA = 0',
-'adm.markerB = %s' % total,
-'adm.setPostProc(3, 3, 0)',
-'adm.videoCodec("Copy")',
-'adm.audioClearTracks()',
-'adm.setSourceTrackLanguage(0,"und")',
-'adm.audioAddTrack(0)',
-'adm.audioCodec(0, "copy");',
-'adm.audioSetDrc(0, 0)',
-'adm.audioSetShift(0, 0, 0)',
-'adm.setContainer("MP4", "muxerType=0", "optimize=1", "forceAspectRatio=False", "aspectRatio=1", "rotation=0")',
-]
-
-with open(FILM_PY, 'w') as f:
-    f.write('\n'.join(LINES))
+    start  = str(trim0)
+    end    = str(trim0 + duration)
+    print( start, end)
+    mp4 = MP4s.get(source)
+    clip = mp4.subclip(start, end)
+    VIDEOS.append(clip)
     
-# for l in LINES:
-#     print(l)    
 
-# import subprocess
-# cmd = [
-#     r'"D:\Program Files\Avidemux 2.7 VC++ 64bits\avidemux.exe"',
-#     # https://www.avidemux.org/admWiki/doku.php?id=using:command_line_usage
-#     '--run', FILM_PY,
-#     '--output-format', 'MP4'
-# ]
-# # subprocess.run(cmd)
-# subprocess.call(cmd)
+print('marker.end=', str(total))    
+# final_clip = concatenate_videoclips(VIDEOS)
+# final_clip.write_videofile(FILM_MP4, fps=25)
+
+
+
+# with open(FILM_BCPF, 'w') as f:
+#     f.write('\n'.join(LINES))
+    
