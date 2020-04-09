@@ -10,20 +10,17 @@ FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-6-APRIL\report-4d-
 # FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-APRIL-5\report-bertumpuk.wfp'
 
 FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-08-APRIL\no_4.wfp'
-FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-08-APRIL\-04-half.wfp'
+# FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-08-APRIL\-04-half.wfp'
 # FILM_PRJ = r'WSVEFolder\Project\project.xml'
 
 FILM_PRJ = os.path.abspath(FILM_PRJ) 
-FILM_BCPF = os.path.splitext(FILM_PRJ)[0] + '.bcpf'
+FILM_CSV = os.path.splitext(FILM_PRJ)[0] + '.csv'
 # FILM_MP4 = os.path.splitext(FILM_PRJ)[0] + '.mp4'
 
 print(locals())
 
 LOADED_VIDEO = []
 LINES = [ # to be file.py lines
-'''<?xml version="1.0" encoding="utf-16"?>
-<BandicutProjectFile>
-	<Setting Type="Cut" Join="Yes" />'''
 ]
 META = [] # array of dict per segment
 
@@ -128,23 +125,16 @@ for i, m in enumerate(META):
     level  = m['level']
     enable = '' if m['enable'] == '1' else '# '
     time   = m['time']
-    pos0   = fixInt(time['time.position.start'])
-    posz   = fixInt(time['time.position.end'])
-    trim0  = fixInt(time['time.trim.start'])
+    pos0   = float(time['time.position.start'])
+    posz   = float(time['time.position.end'])
+    trim0  = float(time['time.trim.start'])
     duration = posz - pos0
+    end = trim0 + duration
     total += duration
-    LINES.append(
-'''	<VideoItem	Index="%s"	Crc="0"	VideoIndex="0"	AudioIndex="0"
-		Start="%s"		End="%s"
-		Title="Notitle"
-		File="%s" />'''  % (i, trim0, duration, source))
+    LINES.append('%s,%s,'  % (trim0, end))
 
-LINES += [    
-'''</BandicutProjectFile>
-''',
-]
 
-with open(FILM_BCPF, 'w') as f:
+with open(FILM_CSV, 'w') as f:
     f.write('\n'.join(LINES))
     
 # for l in LINES:
@@ -154,7 +144,7 @@ with open(FILM_BCPF, 'w') as f:
 # cmd = [
 #     r'"D:\Program Files\Avidemux 2.7 VC++ 64bits\avidemux.exe"',
 #     # https://www.avidemux.org/admWiki/doku.php?id=using:command_line_usage
-#     '--run', FILM_BCPF,
+#     '--run', FILM_CSV,
 #     '--output-format', 'MP4'
 # ]
 # # subprocess.run(cmd)
