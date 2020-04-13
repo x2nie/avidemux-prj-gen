@@ -9,6 +9,7 @@ FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-6-APRIL\report-4d-
 # FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-APRIL-5\report-sederhana.wfp'
 # FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-APRIL-5\report-bertumpuk.wfp'
 FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-08-APRIL\no_4.wfp'
+FILM_PRJ = r'C:\Users\citra\Videos\Logitech\LogiCapture\FINAL-08-APRIL\102-create-geo-entities-db.wfp'
 # FILM_PRJ = r'WSVEFolder\Project\project.xml'
 
 FILM_PRJ = os.path.abspath(FILM_PRJ) 
